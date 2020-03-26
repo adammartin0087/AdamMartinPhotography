@@ -3,7 +3,8 @@ export function getAwards() {
     {
       name: "Eye of the Tornado",
       position: "3<sup>rd</sup> Place - Wide Angle",
-      imageUrl: "https://www.uwphotographyguide.com/images/ocean-art-2019/Wide-Angle3_Adam_Martin_Eye%20of%20the%20Hurricane%20copy.jpg",
+      imageUrl:
+        "https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill,w_400,h_270,dpr_2.0/Wide-Angle3_Adam_Martin_Eye_of_the_Hurricane_copy-min",
       location: "Sea of Cortez, Mexico",
       url: "https://www.uwphotographyguide.com/oa19-3rd-wide-angle",
       story:
@@ -12,7 +13,7 @@ export function getAwards() {
     {
       name: "Dive Photo Guide-SharkCon Competition 2019",
       position: "Silver - Shark Behavior",
-      imageUrl: "http://www.divephotoguide.com/images/lightboximage/orig/1563088113.jpg",
+      imageUrl: "https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill,w_400,h_270,dpr_2.0/1563088113-min",
       location: "Jardines de la Reina, Cuba",
       url: "http://www.divephotoguide.com/underwater-photography-scuba-ocean-news/announcing-winners-dpg-sharkcon-photo-competition-2019",
       story:
@@ -21,7 +22,8 @@ export function getAwards() {
     {
       name: "Ocean Art 2018",
       position: "Honorable Mention - Cold Water",
-      imageUrl: "https://www.uwphotographyguide.com/sites/default/files/Cold-Water_Adam_Martin_Winter--in-Iceland.jpg",
+      imageUrl:
+        "https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill,w_400,h_270,dpr_2.0/Cold-Water_Adam_Martin_Winter--in-Iceland-min",
       location: "Davíðsgjá, Iceland",
       url: "https://www.uwphotographyguide.com/oa18-hm3-cold-water",
       story:
@@ -30,7 +32,7 @@ export function getAwards() {
     {
       name: "SoCal Shootout 2017",
       position: "5<sup>th</sup> Place - Wide Angle",
-      imageUrl: "https://www.bluewaterphotostore.com/images/2017shootout/2017-SCSO-WA-05.jpg",
+      imageUrl: "https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill,w_400,h_270,dpr_2.0/2017-SCSO-WA-05-min",
       location: "Catalina Island, California",
       url: "https://www.bluewaterphotostore.com/2017-socal-shootout-results",
       story:
@@ -39,7 +41,8 @@ export function getAwards() {
     {
       name: "Ocean Art 2015",
       position: "2<sup>nd</sup> Place - Novice DSLR",
-      imageUrl: "https://www.uwphotographyguide.com/sites/default/files/u2168/2nd-ndslr-ocean-art-2015-adam-martin-1200.jpg",
+      imageUrl:
+        "https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill,w_400,h_270,dpr_2.0/2nd-ndslr-ocean-art-2015-adam-martin-1200-min",
       location: "Red Sea, Egypt",
       url: "https://www.uwphotographyguide.com/oa15-2nd-novicedslr",
       story:
@@ -48,7 +51,7 @@ export function getAwards() {
     {
       name: "SoCal Shootout 2015",
       position: "2<sup>nd</sup> Place - Wide Angle",
-      imageUrl: "https://www.bluewaterphotostore.com/images/2015shootout/OW-02-AdamMartin.jpg",
+      imageUrl: "https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill,w_400,h_270,dpr_2.0/OW-02-AdamMartin-min",
       location: "Santa Barbara Island, California",
       url: "https://www.bluewaterphotostore.com/2015-socal-shootout-results",
       story:
