@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
+import "bootstrap/dist/css/bootstrap.css";
 import "./assets/css/unify-core.css";
 import "./assets/css/unify-components.css";
 import "./assets/css/unify-globals.css";
