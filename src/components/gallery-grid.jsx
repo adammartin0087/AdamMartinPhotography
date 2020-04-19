@@ -26,12 +26,10 @@ class GalleryGrid extends Component {
   }
 
   render() {
-    console.log(this.state.images);
-
     return (
-      <div className="container g-py-50">
+      <React.Fragment>
         {this.state.images && this.state.images.map(image => <GalleryImage category={image.category} key={image.name} image={image} />)}
-      </div>
+      </React.Fragment>
     );
   }
 }

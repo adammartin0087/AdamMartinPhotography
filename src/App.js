@@ -5,7 +5,6 @@ import Home from "./components/home";
 import About from "./components/about";
 import Contact from "./components/contact";
 import Awards from "./components/awards";
-import Gallery from "./components/gallery";
 import GalleryRoute from "./components/gallery-route";
 import NotFound from "./components/not-found";
 
@@ -18,7 +17,6 @@ class App extends Component {
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/awards" component={Awards} />
-          <Route path="/gallery" component={Gallery} />
 
           <Route path="/underwater" component={GalleryRoute} />
           <Route path="/pumas" component={GalleryRoute} />

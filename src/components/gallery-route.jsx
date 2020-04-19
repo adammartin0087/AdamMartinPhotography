@@ -5,12 +5,10 @@ import GalleryDetail from "./gallery-detail";
 
 const GalleryRoute = ({ match }) => {
   return (
-    <React.Fragment>
-      <Switch>
-        <Route path={`${match.url}/`} exact component={GalleryGrid} />
-        <Route path={`${match.url}/:id`} component={GalleryDetail} /> */}
-      </Switch>
-    </React.Fragment>
+    <Switch>
+      <Route path={`${match.url}/`} exact component={GalleryGrid} />
+      <Route path={`${match.url}/:id`} component={GalleryDetail} /> */}
+    </Switch>
   );
 };
 

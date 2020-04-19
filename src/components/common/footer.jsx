@@ -1,23 +1,24 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 
 const Footer = () => {
   return (
     <Container>
       <Row>
-        <div className="col-sm-6 col-lg-3">
+        <Col sm={6} lg={3}>
           <Link to="/">
-            <img
+            <Image
               className="img-fluid"
               src="https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill,dpr_2.0/AMP"
               alt="Adam Martin Photography"
               title="Adam Martin Photography"
+              width="80"
             />
           </Link>
           <p>2020 © All Rights Reserved.</p>
-        </div>
-        <div className="col-sm-6 col-lg-3">
+        </Col>
+        <Col sm={6} lg={3}>
           <h3 className="h6 text-uppercase mb-4">Gallery</h3>
           <ul className="list-unstyled">
             <li>
@@ -51,8 +52,8 @@ const Footer = () => {
               </NavLink>
             </li>
           </ul>
-        </div>
-        <div className="col-sm-6 col-lg-3">
+        </Col>
+        <Col sm={6} lg={3}>
           <h3 className="h6 text-uppercase mb-4">About</h3>
           <ul className="list-unstyled">
             <li className="media mb-4">
@@ -68,8 +69,8 @@ const Footer = () => {
               </div>
             </li>
           </ul>
-        </div>
-        <div className="col-sm-6 col-lg-3">
+        </Col>
+        <Col sm={6} lg={3}>
           <h3 className="h6 text-uppercase mb-4">Follow</h3>
           <ul className="list-unstyled">
             <li>
@@ -91,7 +92,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </div>
+        </Col>
       </Row>
     </Container>
   );
