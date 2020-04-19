@@ -15,7 +15,7 @@ const Contact = () => {
               </span>
             </div>
             <div className="media-body align-self-center">
-              <h3 className="h6 text-uppercase mb-0">Location</h3>
+              <h2 className="text-uppercase mb-0">Location</h2>
               <p className="mb-0">Boulder, Colorado, USA</p>
             </div>
           </div>
@@ -32,10 +32,10 @@ const Contact = () => {
               <popover>
                 <div className="text-center text-uppercase u-ns-bg-v1-bottom g-absolute-centered--x g-bg-black g-width-170 g-mb-40">
                   <div>
-                    <h4>
+                    <strong>
                       <i className="fa fa-map-marker" />
                       <span className="g-valign-middle">LOCATION</span>
-                    </h4>
+                    </strong>
                   </div>
                 </div>
               </popover>

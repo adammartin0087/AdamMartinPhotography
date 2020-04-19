@@ -14,7 +14,7 @@ const About = () => {
             />
           </Col>
           <Col md={8}>
-            <h4 className="h5">Adam T. Martin</h4>
+            <h2>Adam Martin</h2>
             <p>
               Adam is a freelance software developer and underwater photographer born in Los Angeles, California. He grew up in the waves, and in his
               late 20s, after going to school for a Masters Degree in Computer Science, that love for the ocean developed into a love for diving and

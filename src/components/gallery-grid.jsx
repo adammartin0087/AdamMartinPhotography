@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import GalleryImage from "./gallery-image";
 import galleryService from "../services/galleryService";
+import { Row, Container } from "react-bootstrap";
 
 class GalleryGrid extends Component {
   state = {
@@ -27,9 +28,7 @@ class GalleryGrid extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        {this.state.images && this.state.images.map(image => <GalleryImage category={image.category} key={image.name} image={image} />)}
-      </React.Fragment>
+      <Row>{this.state.images && this.state.images.map(image => <GalleryImage category={image.category} key={image.name} image={image} />)}</Row>
     );
   }
 }

@@ -23,15 +23,17 @@ const Award = ({ award }) => {
       <Col lg={8} className="mb-5">
         <div className="d-flex justify-content-between">
           <div>
-            <h4>
+            <h2>
               <a href={`${award.url}`} target="_blank" rel="noopener noreferrer">
                 {award.name}
-              </a>
-            </h4>
-            <em className="text-uppercase">
-              <Icon icon="trophy" className="mr-2" />
-              {award.position}
-            </em>
+              </a>{" "}
+              <br />
+              <small className="text-uppercase">
+                <Icon icon="trophy" className="mr-2" />
+                {award.position}
+              </small>
+            </h2>
+
             <br />
           </div>
           <div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Container, Row, Col, Image } from "react-bootstrap";
+import Icon from "./icon";
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
           <p>2020 © All Rights Reserved.</p>
         </Col>
         <Col sm={6} lg={3}>
-          <h3 className="h6 text-uppercase mb-4">Gallery</h3>
+          <span className="h6 text-uppercase mb-4">Gallery</span>
           <ul className="list-unstyled">
             <li>
               <i className="fa fa-angle-right" />
@@ -54,10 +55,10 @@ const Footer = () => {
           </ul>
         </Col>
         <Col sm={6} lg={3}>
-          <h3 className="h6 text-uppercase mb-4">About</h3>
+          <span className="h6 text-uppercase mb-4">About</span>
           <ul className="list-unstyled">
             <li className="media mb-4">
-              <i className="icon-hotel-restaurant-235 u-line-icon-pro" />
+              <Icon icon="map-marker" />
               <div className="media-body">Boulder, Colorado, USA</div>
             </li>
             <li className="media mb-4">
@@ -71,10 +72,10 @@ const Footer = () => {
           </ul>
         </Col>
         <Col sm={6} lg={3}>
-          <h3 className="h6 text-uppercase mb-4">Follow</h3>
+          <span className="h6 text-uppercase mb-4">Follow</span>
           <ul className="list-unstyled">
             <li>
-              <i className="fa fa-instagram" />
+              <Icon icon="instagram" />
               <a
                 className=""
                 href="https://www.instagram.com/adammartinphotography/"
@@ -86,7 +87,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <i className="fa fa-facebook" />
+              <Icon icon="facebook" />
               <a className="" href="https://www.facebook.com/amuwp" title="Follow on Facebook!" target="_blank" rel="noopener noreferrer">
                 Facebook
               </a>
