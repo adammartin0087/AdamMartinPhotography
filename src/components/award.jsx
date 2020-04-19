@@ -1,41 +1,74 @@
 import React from "react";
 import Parser from "html-react-parser";
+// import { LazyImage } from "react-lazy-images";
+import { Col, Row } from "react-bootstrap";
+import ShadowImage from "./common/shadow-image";
+import Icon from "./common/icon";
 
 const Award = ({ award }) => {
   return (
-    <figure className="row g-mb-30">
-      <div className="col-md-8 col-lg-4 g-mb-30">
-        <div className="text-center u-block-hover u-shadow-v1-5 g-line-height-2 g-pa-15">
+    <Row>
+      <Col md={8} lg={4}>
+        <div className="text-center">
           <a href={`${award.url}`} target="_blank" rel="noopener noreferrer" title={`${award.position} - ${award.name}`}>
-            <img className="img-fluid" src={award.imageUrl} alt={`${award.position} - ${award.name}`} />
+            <ShadowImage
+              src={"https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill,w_350,dpr_2.0/" + award.imageUrl}
+              alt={award.title}
+              title={award.title}
+            />
           </a>
         </div>
-      </div>
-      <div className="col-lg-8">
+      </Col>
+
+      <Col lg={8} className="mb-5">
         <div className="d-flex justify-content-between">
           <div>
-            <h4 className="h5 g-mb-5">
+            <h4>
               <a href={`${award.url}`} target="_blank" rel="noopener noreferrer">
                 {award.name}
               </a>
             </h4>
-            <em className="d-block g-font-style-normal g-font-size-12 text-uppercase g-color-primary">
-              <span className="fa fa-trophy" />
+            <em className="text-uppercase">
+              <Icon icon="trophy" className="mr-2" />
               {award.position}
             </em>
             <br />
           </div>
           <div>
-            <span className="fa fa-map-marker mr-1" /> {award.location}
+            <Icon icon="map-marker" className="mr-2" /> {award.location}
           </div>
         </div>
         <p>
-          <b>The Story:</b>
+          <strong>The Story: </strong>
           {Parser(award.story)}
         </p>
-      </div>
-    </figure>
+      </Col>
+    </Row>
   );
 };
 
 export default Award;
+
+/* 
+            <LazyImage
+              alt={award.title}
+              placeholder={({ imageProps, ref }) => (
+                <img
+                  ref={ref}
+                  src={
+                    "https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill,w_20,h_8,dpr_2.0/w_319,h_213/" + award.imageUrl
+                  }
+                  alt={award.title}
+                  title={award.title}
+                  className="img-fluid"
+                />
+              )}
+              actual={() => (
+                <img
+                  className="img-fluid"
+                  src={"https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill,w_350,dpr_2.0/" + award.imageUrl}
+                  alt={award.title}
+                  title={award.title}
+                />
+              )}
+            /> */

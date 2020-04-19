@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "./../../components/common/header";
 import Footer from "./../../components/common/footer";
+import { Container, Row } from "react-bootstrap";
 
 class Layout extends Component {
   state = {};
@@ -9,22 +10,18 @@ class Layout extends Component {
     return (
       <React.Fragment>
         <Header />
-        <section className="g-bg-primary g-color-white g-py-20">
-          <div className="container">
-            <div className="d-sm-flex text-center">
-              <div className="align-self-center">
-                <h2 className="h3 g-font-weight-300 w-100 g-mb-10 g-mb-0--md">Title</h2>
-              </div>
-              {/* @RenderSection("BreadCrumb", false) */}
-            </div>
+        <Container>
+          <div className="text-center">
+            <h2>Title</h2>
+            {/* @RenderSection("BreadCrumb", false) */}
           </div>
-        </section>
-
+        </Container>
         <main>
-          {children}
-          <Footer />
+          <Container>
+            <Row>{children}</Row>
+          </Container>
         </main>
-        <div className="u-outer-spaces-helper"></div>
+        <Footer />
       </React.Fragment>
     );
   }

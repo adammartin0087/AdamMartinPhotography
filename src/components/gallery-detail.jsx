@@ -51,13 +51,13 @@ class GalleryDetail extends Component {
                 <h3 className="h5 g-color-black mb-3">Share:</h3>
                 <ul className="list-inline mb-0">
                   <li className="list-inline-item mr-1 mb-1">
-                    <a className="btn u-btn-outline-facebook g-rounded-25" href="#">
+                    <a className="btn u-btn-outline-facebook g-rounded-25" href="http://www.facebook.com">
                       <i className="mr-1 fa fa-facebook" />
                       Facebook
                     </a>
                   </li>
                   <li className="list-inline-item mx-1 mb-1">
-                    <a className="btn u-btn-outline-twitter g-rounded-25" href="#">
+                    <a className="btn u-btn-outline-twitter g-rounded-25" href="http://www.twitter.com">
                       <i className="mr-1 fa fa-twitter" />
                       Twitter
                     </a>
