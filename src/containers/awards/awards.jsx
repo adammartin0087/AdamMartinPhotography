@@ -1,15 +1,16 @@
 import React, { Component } from "react";
-import Award from "./award";
-import awardService from "../services/awardService";
+import Award from "../../components/award";
+import awardService from "../../services/awardService";
 import { Row, Container } from "react-bootstrap";
 
 class Awards extends Component {
   state = {
-    awards: []
+    awards: [],
   };
 
   componentDidMount() {
     const awards = awardService.getAwards();
+    this.props.setTitle("Awards");
     this.setState({ awards });
   }
 
@@ -17,7 +18,7 @@ class Awards extends Component {
     return (
       <Row>
         <Container>
-          {this.state.awards.map(award => (
+          {this.state.awards.map((award) => (
             <Award key={award.name} award={award} />
           ))}
         </Container>

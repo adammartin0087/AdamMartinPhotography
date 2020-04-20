@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Container, Navbar, Nav, NavDropdown, Image } from "react-bootstrap";
+import galleryService from "../../services/galleryService";
 
 const Header = () => {
   return (
@@ -8,12 +9,7 @@ const Header = () => {
       <Container>
         <Navbar bg="white" expand="md">
           <Navbar.Brand as={Link} to="/" title="Adam Martin Photography">
-            <img
-              src="https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill,dpr_2.0/AMP"
-              className="img-fluid"
-              style={{ width: "100px", height: "46px" }}
-              alt="Adam Martin Photography"
-            />
+            <Image src={galleryService.getImageUrl("AMP", null, null)} style={{ width: "100px", height: "46px" }} alt="Adam Martin Photography" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="flex-grow-1 text-right">

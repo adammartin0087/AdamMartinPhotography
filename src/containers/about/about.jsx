@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Helmet from "react-helmet";
 import { Row, Container, Col } from "react-bootstrap";
-import ShadowImage from "./common/shadow-image";
+import galleryService from "../../services/galleryService";
+import ShadowImage from "../../components/common/shadow-image";
 
-const About = () => {
+const About = (props) => {
+  useEffect(() => {
+    props.setTitle("About");
+  });
+
   return (
     <Row>
+      <Helmet>
+        <title>About</title>
+      </Helmet>
       <Container>
         <Row>
           <Col md={4}>
-            <ShadowImage
-              src="https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill,w_400,h_400,dpr_2.0/adam"
-              alt="Adam Martin"
-            />
+            <ShadowImage className="mb-5" src={galleryService.getImageUrl("Adam", 400, 400)} alt="Adam Martin" />
           </Col>
           <Col md={8}>
-            <h2>Adam Martin</h2>
+            <h2>Adam T. Martin</h2>
             <p>
               Adam is a freelance software developer and underwater photographer born in Los Angeles, California. He grew up in the waves, and in his
               late 20s, after going to school for a Masters Degree in Computer Science, that love for the ocean developed into a love for diving and

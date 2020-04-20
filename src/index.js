@@ -4,12 +4,12 @@ import { BrowserRouter } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faMapMarker, faTrophy } from "@fortawesome/free-solid-svg-icons";
+import { faMapMarker, faTrophy, faAngleRight, faEnvelope, faCamera } from "@fortawesome/free-solid-svg-icons";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.css";
 import "./app.css";
 
-library.add(faInstagram, faFacebook, faMapMarker, faTrophy);
+library.add(faInstagram, faFacebook, faMapMarker, faTrophy, faAngleRight, faEnvelope, faCamera);
 
 ReactDOM.render(
   <React.StrictMode>

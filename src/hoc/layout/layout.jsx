@@ -1,21 +1,18 @@
 import React, { Component } from "react";
+import Helmet from "react-helmet";
+import Container from "react-bootstrap/Container";
 import Header from "./../../components/common/header";
 import Footer from "./../../components/common/footer";
-import { Container, Row } from "react-bootstrap";
+import TitleBar from "../../components/common/title-bar";
 
 class Layout extends Component {
-  state = {};
   render() {
-    const { children } = this.props;
+    const { children, title } = this.props;
     return (
       <React.Fragment>
+        <Helmet defaultTitle="Adam Martin Photography" titleTemplate="%s | Adam Martin Photography" />
         <Header />
-        <Container fluid style={{ backgroundColor: "#0077c0", paddingTop: 20, paddingBottom: 20, fontWeight: 300, color: "white" }} className="mb-5">
-          <div className="text-center">
-            <h1>Title</h1>
-            {/* @RenderSection("BreadCrumb", false) */}
-          </div>
-        </Container>
+        <TitleBar title={title} />
         <main className="mb-5">
           <Container fluid>{children}</Container>
         </main>

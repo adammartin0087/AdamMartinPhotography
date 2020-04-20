@@ -1,53 +1,48 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Container, Row, Col, Image } from "react-bootstrap";
+import galleryService from "../../services/galleryService";
 import Icon from "./icon";
 
 const Footer = () => {
   return (
-    <Container>
+    <Container className="footer">
       <Row>
         <Col sm={6} lg={3}>
           <Link to="/">
-            <Image
-              className="img-fluid"
-              src="https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill,dpr_2.0/AMP"
-              alt="Adam Martin Photography"
-              title="Adam Martin Photography"
-              width="80"
-            />
+            <Image className="img-fluid" src={galleryService.getImageUrl("AMP", null, null)} alt="Adam Martin Photography" width="80" />
           </Link>
-          <p>2020 © All Rights Reserved.</p>
+          <p className="mt-4">2020 © All Rights Reserved.</p>
         </Col>
         <Col sm={6} lg={3}>
-          <span className="h6 text-uppercase mb-4">Gallery</span>
+          <span className="text-uppercase mb-4 head">Gallery</span>
           <ul className="list-unstyled">
             <li>
-              <i className="fa fa-angle-right" />
+              <Icon icon="angle-right" className="mr-2" />
               <NavLink to="/underwater" className="" title="Underwater Photography">
                 Underwater
               </NavLink>
             </li>
             <li>
-              <i className="fa fa-angle-right" />
+              <Icon icon="angle-right" className="mr-2" />
               <NavLink to="/pumas" className="" title="Mountain Lion Photography">
                 Mountain Lions
               </NavLink>
             </li>
             <li>
-              <i className="fa fa-angle-right" />
+              <Icon icon="angle-right" className="mr-2" />
               <NavLink to="/aerial" className="" title="Aerial Photography">
                 Aerial
               </NavLink>
             </li>
             <li>
-              <i className="fa fa-angle-right" />
+              <Icon icon="angle-right" className="mr-2" />
               <NavLink to="/landscape" className="" title="Landscape Photography">
                 Landscape
               </NavLink>
             </li>
             <li>
-              <i className="fa fa-angle-right" />
+              <Icon icon="angle-right" className="mr-2" />
               <NavLink to="/astrophotography" className="" title="Astrophotography">
                 Astrophotography
               </NavLink>
@@ -55,27 +50,25 @@ const Footer = () => {
           </ul>
         </Col>
         <Col sm={6} lg={3}>
-          <span className="h6 text-uppercase mb-4">About</span>
+          <span className="text-uppercase mb-4 head">About</span>
           <ul className="list-unstyled">
-            <li className="media mb-4">
-              <Icon icon="map-marker" />
-              <div className="media-body">Boulder, Colorado, USA</div>
+            <li>
+              <Icon icon="map-marker" style={{ width: 14 }} className="mr-2" />
+              Boulder, Colorado, USA
             </li>
-            <li className="media mb-4">
-              <i className="icon-communication-062 u-line-icon-pro" />
-              <div className="media-body">
-                <NavLink to="/contact" title="Contact Adam Martin Photography" className="">
-                  Contact
-                </NavLink>
-              </div>
+            <li>
+              <Icon icon="envelope" style={{ width: 14 }} className="mr-2" />
+              <NavLink to="/contact" title="Contact Adam Martin Photography">
+                Contact
+              </NavLink>
             </li>
           </ul>
         </Col>
         <Col sm={6} lg={3}>
-          <span className="h6 text-uppercase mb-4">Follow</span>
+          <span className=" text-uppercase mb-4 head">Follow</span>
           <ul className="list-unstyled">
             <li>
-              <Icon icon="instagram" />
+              <Icon icon={["fab", "instagram"]} style={{ width: 14 }} className="mr-2" />
               <a
                 className=""
                 href="https://www.instagram.com/adammartinphotography/"
@@ -87,7 +80,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <Icon icon="facebook" />
+              <Icon icon={["fab", "facebook"]} style={{ width: 14 }} className="mr-2" />
               <a className="" href="https://www.facebook.com/amuwp" title="Follow on Facebook!" target="_blank" rel="noopener noreferrer">
                 Facebook
               </a>
