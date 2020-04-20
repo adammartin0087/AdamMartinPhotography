@@ -19,27 +19,36 @@ const Home = (props) => {
           <Carousel.Item>
             <Image
               className="d-block w-100"
-              src={galleryService.getImageUrl("American-Crocodile", 1920, 700)}
-              alt="Raggedtooth Shark - Wild Coast, South Africa"
-              title="Raggedtooth Shark - Wild Coast, South Africa"
-            />
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Image
-              className="d-block w-100"
               src={galleryService.getImageUrl("Optimized/Crocodile-Sunset", 1920, 700)}
               alt="American Crocodile - Jardines de la Reina, Cuba"
               title="American Crocodile - Jardines de la Reina, Cuba"
             />
           </Carousel.Item>
-
           <Carousel.Item>
-            <img className="d-block w-100" src={galleryService.getImageUrl("Optimized/Moorea", 1920, 700)} alt="Third slide" title="Third slide" />
+            <Image
+              className="d-block w-100"
+              src={galleryService.getImageUrl("Optimized/Moorea", 1920, 700)}
+              alt="Moorea, French Polynesia"
+              title="Moorea, French Polynesia"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              className="d-block w-100"
+              src={galleryService.getImageUrl("Optimized/Humpbacks", 1920, 700)}
+              alt="Humpback Whales, French Polynesiaa"
+              title="Humpback Whales, French Polynesia"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              className="d-block w-100"
+              src={galleryService.getImageUrl("Optimized/Fakarava-Reef", 1920, 700)}
+              alt="Fakarava, French Polynesia"
+              title="Fakarava, French Polynesia"
+            />
           </Carousel.Item>
         </Carousel>
-
-        {/* <Image className="img-fluid" src={galleryService.getImageUrl("Raggie", 1920, 700)} /> */}
       </Row>
       <Row className="mt-4">
         <Col lg={3}>
