@@ -49,22 +49,22 @@ const Home = () => {
       <Row className="mt-4">
         <Col lg={3}>
           <Link to="/underwater" title="Underwater">
-            <ShadowImage src={galleryService.getImageUrl("Humpback-Portrait", w, h)} />
+            <ShadowImage alt="Underwater" src={galleryService.getImageUrl("Humpback-Portrait", w, h)} />
           </Link>
         </Col>
         <Col lg={3}>
           <Link to="/pumas" title="Pumas">
-            <ShadowImage src={galleryService.getImageUrl("Puma-Approaching", w, h)} />
+            <ShadowImage alt="Pumas" src={galleryService.getImageUrl("Puma-Approaching", w, h)} />
           </Link>
         </Col>
         <Col lg={3}>
           <Link to="/aerial" title="Aerial">
-            <ShadowImage src={galleryService.getImageUrl("Darwins-Arch-Galapagos", w, h)} />
+            <ShadowImage alt="Aerial" src={galleryService.getImageUrl("Darwins-Arch-Galapagos", w, h)} />
           </Link>
         </Col>
         <Col lg={3}>
           <Link to="/landscape" title="Landscape">
-            <ShadowImage src={galleryService.getImageUrl("Mirador-Las-Torres", w, h)} />
+            <ShadowImage alt="Landscape" src={galleryService.getImageUrl("Mirador-Las-Torres", w, h)} />
           </Link>
         </Col>
       </Row>

@@ -1,8 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { Form, Breadcrumb, Image, Row, Col, Container } from "react-bootstrap";
-import galleryService from "../../services/galleryService";
-import Icon from "../../components/common/icon";
+import { Form, Breadcrumb, Row, Col, Container } from "react-bootstrap";
 import TitleBar from "../../components/common/title-bar";
 
 const Contact = () => {
