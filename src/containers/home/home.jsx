@@ -31,14 +31,6 @@ const Home = () => {
           <Carousel.Item>
             <Image
               className="d-block w-100"
-              src={galleryService.getImageUrl("Optimized/Humpbacks", 1920, 700)}
-              alt="Humpback Whales, French Polynesiaa"
-              title="Humpback Whales, French Polynesia"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <Image
-              className="d-block w-100"
               src={galleryService.getImageUrl("Optimized/Fakarava-Reef", 1920, 700)}
               alt="Fakarava, French Polynesia"
               title="Fakarava, French Polynesia"
