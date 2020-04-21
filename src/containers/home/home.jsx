@@ -42,7 +42,7 @@ const Home = () => {
       <Row className="mt-4">
         <Col lg={3}>
           <Link to="/underwater" title="Underwater">
-            <ShadowImage alt="Underwater" src={galleryService.getImageUrl("Optimized/Humpback-Portrait", w, h)} />
+            <ShadowImage alt="Underwater" src={galleryService.getImageUrl("Optimized/Humpbacks-Surfacing", w, h)} />
             <h2 className="tile">Underwater</h2>
           </Link>
         </Col>
@@ -54,13 +54,13 @@ const Home = () => {
         </Col>
         <Col lg={3}>
           <Link to="/aerial" title="Aerial">
-            <ShadowImage alt="Aerial" src={galleryService.getImageUrl("Optimized/Darwins-Arch-Galapagos", w, h)} />
+            <ShadowImage alt="Aerial" src={galleryService.getImageUrl("Darwins_Arch_Aerial", w, h)} />
             <h2 className="tile">Aerial</h2>
           </Link>
         </Col>
         <Col lg={3}>
           <Link to="/landscape" title="Landscape">
-            <ShadowImage alt="Landscape" src={galleryService.getImageUrl("Optimized/Mirador-Las-Torres", w, h)} />
+            <ShadowImage alt="Landscape" src={galleryService.getImageUrl("Kirkjufell-Iceland", w, h)} />
             <h2 className="tile">Landscape</h2>
           </Link>
         </Col>
