@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import galleryService from "../../services/galleryService";
 
@@ -21,13 +21,13 @@ class Header extends Component {
       <header>
         <div className="container">
           <Navbar expanded={this.state.expanded} bg="white" expand="md">
-            <Navbar.Brand as={Link} to="/" title="Adam Martin Photography">
+            <Navbar.Brand as={NavLink} to="/" title="Adam Martin Photography">
               <img src={galleryService.getImageUrl("AMP", null, null)} style={{ width: "100px", height: "46px" }} alt="Adam Martin Photography" />
             </Navbar.Brand>
             <Navbar.Toggle onClick={this.state.expanded ? this.collapse : this.expand} aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="flex-grow-1">
               <Nav className="ml-auto flex-nowrap">
-                <Nav.Link as={Link} to="/" title="Home" onClick={this.collapse}>
+                <Nav.Link as={NavLink} to="/" title="Home" onClick={this.collapse}>
                   Home
                 </Nav.Link>
                 <NavDropdown title="Gallery">
@@ -47,13 +47,13 @@ class Header extends Component {
                     Astrophotography
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link as={Link} to="/awards" title="Awards" onClick={this.collapse}>
+                <Nav.Link as={NavLink} to="/awards" title="Awards" onClick={this.collapse}>
                   Awards
                 </Nav.Link>
-                <Nav.Link as={Link} to="/about" title="About" onClick={this.collapse}>
+                <Nav.Link as={NavLink} to="/about" title="About" onClick={this.collapse}>
                   About
                 </Nav.Link>
-                <Nav.Link as={Link} to="/contact" title="contact" onClick={this.collapse}>
+                <Nav.Link as={NavLink} to="/contact" title="contact" onClick={this.collapse}>
                   Contact
                 </Nav.Link>
               </Nav>

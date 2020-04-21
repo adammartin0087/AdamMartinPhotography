@@ -27,6 +27,7 @@ module.exports = {
           "navbar-expand-lg",
           "navbar-toggler",
           "navbar-toggler-icon",
+          "show",
           "dropdown",
           "dropdown-toggle",
           "dropdown-menu",
