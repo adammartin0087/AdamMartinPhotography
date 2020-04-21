@@ -1,19 +1,20 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Helmet from "react-helmet";
 import { Row, Container, Col } from "react-bootstrap";
 import galleryService from "../../services/galleryService";
 import ShadowImage from "../../components/common/shadow-image";
+import TitleBar from "../../components/common/title-bar";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 
-const About = (props) => {
-  useEffect(() => {
-    props.setTitle("About");
-  });
-
+const About = () => {
   return (
     <Row>
       <Helmet>
         <title>About</title>
       </Helmet>
+      <TitleBar title="About">
+        <Breadcrumb.Item active>About</Breadcrumb.Item>
+      </TitleBar>
       <Container>
         <Row>
           <Col md={4}>

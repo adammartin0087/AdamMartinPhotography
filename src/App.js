@@ -9,31 +9,21 @@ import Gallery from "./containers/gallery/gallery";
 import NotFound from "./containers/not-found/not-found";
 
 class App extends Component {
-  state = {
-    title: "",
-  };
-
-  setTitle(title) {
-    if (title === this.state.title) return;
-    this.setState({ title });
-  }
-
+  state = {};
   render() {
     return (
-      <Layout location={this.props.location} title={this.state.title}>
+      <Layout location={this.props.location}>
         <Switch location={this.props.location}>
-          <Route path="/about" render={(props) => <About {...props} setTitle={(title) => this.setTitle(title)} />} />
-          <Route path="/contact" render={(props) => <Contact {...props} setTitle={(title) => this.setTitle(title)} />} />
-          <Route path="/awards" render={(props) => <Awards {...props} setTitle={(title) => this.setTitle(title)} />} />
-
-          <Route path="/underwater" render={(props) => <Gallery {...props} setTitle={(title) => this.setTitle(title)} />} />
-          <Route path="/pumas" render={(props) => <Gallery {...props} setTitle={(title) => this.setTitle(title)} />} />
-          <Route path="/aerial" render={(props) => <Gallery {...props} setTitle={(title) => this.setTitle(title)} />} />
-          <Route path="/landscape" render={(props) => <Gallery {...props} setTitle={(title) => this.setTitle(title)} />} />
-          <Route path="/astrophotography" render={(props) => <Gallery {...props} setTitle={(title) => this.setTitle(title)} />} />
-
-          <Route path="/" exact render={(props) => <Home {...props} setTitle={(title) => this.setTitle(title)} />} />
-          <Route path="/" render={(props) => <NotFound {...props} setTitle={(title) => this.setTitle(title)} />} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/awards" component={Awards} />
+          <Route path="/underwater" component={Gallery} />
+          <Route path="/pumas" component={Gallery} />
+          <Route path="/aerial" component={Gallery} />
+          <Route path="/landscape" component={Gallery} />
+          <Route path="/astrophotography" component={Gallery} />
+          <Route path="/" exact component={Home} />
+          <Route path="/" component={NotFound} />
         </Switch>
       </Layout>
     );

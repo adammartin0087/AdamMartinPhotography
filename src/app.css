@@ -52,6 +52,24 @@ a {
 .titleBar {
   background-color: #0077c0;
 }
+.breadcrumb {
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: transparent;
+}
+
+.breadcrumb-item a {
+  color: white;
+}
+
+.breadcrumb-item.active {
+  color: #82cfff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: white;
+}
 
 .footer,
 .footer a {

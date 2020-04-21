@@ -1,16 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Row, Col, Image, Carousel } from "react-bootstrap";
 import galleryService from "../../services/galleryService";
 import ShadowImage from "../../components/common/shadow-image";
 
-const Home = (props) => {
+const Home = () => {
   const w = 600;
   const h = 432;
-
-  useEffect(() => {
-    props.setTitle("");
-  });
 
   return (
     <React.Fragment>
