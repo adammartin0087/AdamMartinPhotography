@@ -40,13 +40,13 @@ const Home = () => {
         </Col>
         <Col lg={3} sm={6}>
           <Link to="/aerial" title="Aerial">
-            <ShadowImage alt="Aerial" src={getImageUrl("Darwins_Arch_Aerial", w, h)} />
+            <ShadowImage alt="Aerial" src={getImageUrl("Optimized/DarwinsArch", w, h)} />
             <h2 className="tile">Aerial</h2>
           </Link>
         </Col>
         <Col lg={3} sm={6}>
           <Link to="/landscape" title="Landscape">
-            <ShadowImage alt="Landscape" src={getImageUrl("Optimized/Kirkjufell-Iceland", w, h)} />
+            <ShadowImage alt="Landscape" src={getImageUrl("Optimized/Kirkjufell", w, h)} />
             <h2 className="tile">Landscape</h2>
           </Link>
         </Col>
