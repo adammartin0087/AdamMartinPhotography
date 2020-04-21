@@ -15,7 +15,7 @@ const Banner = ({ title, src }) => {
       <source srcSet={getImageUrl(src, 1900, 800)} media="(max-width: 1899px)" />
       <source srcSet={getImageUrl(src, 2100, 800)} media="(max-width: 2099px)" />
       <source srcSet={getImageUrl(src, 2300, 800)} media="(max-width: 2299px)" />
-      <source srcSet={getImageUrl(src, 2560, 800, "crop", src)} media="(min-width: 2499px)" />
+      <source srcSet={getImageUrl(src, 2560, 800, "crop", src)} media="(min-width: 2300px)" />
       <img className="img-fluid" src={getImageUrl(src, 30, 50)} alt={title} title={title} />
     </picture>
   );

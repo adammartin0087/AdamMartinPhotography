@@ -840,7 +840,8 @@ const images = [
 export function getImageUrl(code, w, h) {
   const width = w > 0 ? ",w_" + w : "";
   const height = h > 0 ? ",h_" + h : "";
-  return `https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill${width}${height},dpr_2.0/${code}`;
+  return `https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill${width}${height}/${code}`;
+  // return `https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill${width}${height},dpr_2.0/${code}`;
 }
 
 export function getImages(category) {
