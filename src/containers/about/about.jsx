@@ -1,26 +1,22 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { Row, Container, Col } from "react-bootstrap";
 import galleryService from "../../services/galleryService";
 import ShadowImage from "../../components/common/shadow-image";
 import TitleBar from "../../components/common/title-bar";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
 
 const About = () => {
   return (
-    <Row>
+    <div className="row">
       <Helmet>
         <title>About</title>
       </Helmet>
-      <TitleBar title="About">
-        <Breadcrumb.Item active>About</Breadcrumb.Item>
-      </TitleBar>
-      <Container>
-        <Row>
-          <Col md={4}>
+      <TitleBar title="About">{/* <Breadcrumb.Item active>About</Breadcrumb.Item> */}</TitleBar>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">
             <ShadowImage className="mb-5" src={galleryService.getImageUrl("Adam", 400, 400)} alt="Adam Martin" />
-          </Col>
-          <Col md={8}>
+          </div>
+          <div className="col-md-8">
             <h2>Adam T. Martin</h2>
             <p>
               Adam is a freelance software developer and underwater photographer born in Los Angeles, California. He grew up in the waves, and in his
@@ -29,10 +25,10 @@ const About = () => {
               conditions. Using ultra wide-angle photography, Adam captures dramatic scenes to try and convey the story and sense of adventure behind
               each image.
             </p>
-          </Col>
-        </Row>
-      </Container>
-    </Row>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

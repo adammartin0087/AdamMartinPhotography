@@ -1,20 +1,19 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Container, Row, Col, Image } from "react-bootstrap";
 import galleryService from "../../services/galleryService";
 import Icon from "./icon";
 
 const Footer = () => {
   return (
-    <Container className="footer">
-      <Row>
-        <Col sm={6} lg={3}>
+    <div className="container footer">
+      <div className="row">
+        <div className="col-sm-6 col-lg-3">
           <Link to="/">
-            <Image className="img-fluid" src={galleryService.getImageUrl("AMP", null, null)} alt="Adam Martin Photography" width="80" />
+            <img className="img-fluid" src={galleryService.getImageUrl("AMP", null, null)} alt="Adam Martin Photography" width="80" />
           </Link>
           <p className="mt-4">2020 © All Rights Reserved.</p>
-        </Col>
-        <Col sm={6} lg={3}>
+        </div>
+        <div className="col-sm-6 col-lg-3">
           <span className="text-uppercase mb-4 head">Gallery</span>
           <ul className="list-unstyled">
             <li>
@@ -48,8 +47,8 @@ const Footer = () => {
               </NavLink>
             </li>
           </ul>
-        </Col>
-        <Col sm={6} lg={3}>
+        </div>
+        <div className="col-sm-6 col-lg-3">
           <span className="text-uppercase mb-4 head">About</span>
           <ul className="list-unstyled">
             <li>
@@ -63,8 +62,8 @@ const Footer = () => {
               </NavLink>
             </li>
           </ul>
-        </Col>
-        <Col sm={6} lg={3}>
+        </div>
+        <div className="col-sm-6 col-lg-3">
           <span className=" text-uppercase mb-4 head">Follow</span>
           <ul className="list-unstyled">
             <li>
@@ -86,9 +85,9 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 };
 

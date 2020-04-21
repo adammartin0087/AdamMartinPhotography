@@ -1,24 +1,21 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { Form, Breadcrumb, Row, Col, Container } from "react-bootstrap";
 import TitleBar from "../../components/common/title-bar";
 
 const Contact = () => {
   return (
     <React.Fragment>
-      <Row>
+      <div className="row">
         <Helmet>
           <title>Contact</title>
         </Helmet>
-        <TitleBar title="Contact">
-          <Breadcrumb.Item active>Contact</Breadcrumb.Item>
-        </TitleBar>
-        <Container>
+        <TitleBar title="Contact">{/* <Breadcrumb.Item active>Contact</Breadcrumb.Item> */}</TitleBar>
+        <div className="container">
           <p className="mb-5">Thank you for your interest. Please fill out the contact form below:</p>
 
-          <Form>
-            <Row className="justify-content-center">
-              <Col md={5}>
+          <form>
+            <div className="row justify-content-center">
+              <div className="col-md-5">
                 <div>
                   <label htmlFor="name">Name</label>
                   <input type="text" id="name" autoComplete="off" required maxLength="50" className="form-control" />
@@ -35,8 +32,8 @@ const Contact = () => {
                   <label htmlFor="phone">Phone Number</label>
                   <input type="text" id="phone" autoComplete="off" required maxLength="50" className="form-control" />
                 </div>
-              </Col>
-              <Col md={7}>
+              </div>
+              <div className="col-md-7">
                 <div>
                   <label htmlFor="question">Question</label>
                   <textarea
@@ -54,11 +51,11 @@ const Contact = () => {
                     Send
                   </button>
                 </div>
-              </Col>
-            </Row>
-          </Form>
-        </Container>
-      </Row>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </React.Fragment>
   );
 };

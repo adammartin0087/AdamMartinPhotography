@@ -1,6 +1,5 @@
 import React from "react";
 import Helmet from "react-helmet";
-import Alert from "react-bootstrap/Alert";
 
 const NotFound = () => {
   return (
@@ -8,7 +7,7 @@ const NotFound = () => {
       <Helmet>
         <title>Page Not Found</title>
       </Helmet>
-      <Alert variant="danger w-100">Page not found.</Alert>;
+      <div className="alert alert-danger w-100">Page not found.</div>
     </React.Fragment>
   );
 };

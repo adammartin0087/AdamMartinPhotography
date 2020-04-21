@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { Row, Container } from "react-bootstrap";
 import Helmet from "react-helmet";
-import { Breadcrumb } from "react-bootstrap/";
 import Award from "../../components/award";
 import awardService from "../../services/awardService";
 import TitleBar from "../../components/common/title-bar";
@@ -18,20 +16,18 @@ class Awards extends Component {
 
   render() {
     return (
-      <Row>
+      <div className="row">
         <Helmet>
           <title>Awards</title>
         </Helmet>
-        <TitleBar title="Awards">
-          <Breadcrumb.Item active>Awards</Breadcrumb.Item>
-        </TitleBar>
+        <TitleBar title="Awards">{/* <Breadcrumb.Item active>Awards</Breadcrumb.Item> */}</TitleBar>
 
-        <Container>
+        <div className="container">
           {this.state.awards.map((award) => (
             <Award key={award.name} award={award} />
           ))}
-        </Container>
-      </Row>
+        </div>
+      </div>
     );
   }
 }

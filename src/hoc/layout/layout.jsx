@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
-import Container from "react-bootstrap/Container";
 import Header from "./../../components/common/header";
 import Footer from "./../../components/common/footer";
 
@@ -14,7 +13,7 @@ class Layout extends Component {
         </Helmet>
         <Header />
         <main className="mb-5">
-          <Container fluid>{children}</Container>
+          <div className="container-fluid">{children}</div>
         </main>
         <Footer />
       </React.Fragment>

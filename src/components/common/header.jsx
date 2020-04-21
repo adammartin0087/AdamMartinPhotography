@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Container, Navbar, Nav, NavDropdown, Image } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import galleryService from "../../services/galleryService";
 
 class Header extends Component {
@@ -19,10 +19,10 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <Container>
+        <div className="container">
           <Navbar expanded={this.state.expanded} bg="white" expand="md">
             <Navbar.Brand as={Link} to="/" title="Adam Martin Photography">
-              <Image src={galleryService.getImageUrl("AMP", null, null)} style={{ width: "100px", height: "46px" }} alt="Adam Martin Photography" />
+              <img src={galleryService.getImageUrl("AMP", null, null)} style={{ width: "100px", height: "46px" }} alt="Adam Martin Photography" />
             </Navbar.Brand>
             <Navbar.Toggle onClick={this.state.expanded ? this.collapse : this.expand} aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="flex-grow-1">
@@ -59,7 +59,7 @@ class Header extends Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-        </Container>
+        </div>
       </header>
     );
   }

@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Col, Row, Breadcrumb } from "react-bootstrap/";
 
 const TitleBar = ({ title, children }) => {
   return (
@@ -7,15 +6,15 @@ const TitleBar = ({ title, children }) => {
       <div className="container-fluid titleBar py-3 mb-4 text-light">
         <div className="container">
           <div class="row">
-            <Col xs={12} md={6}>
+            <div className="col-xs-12 col-md-6">
               <h1>{title}</h1>
-            </Col>
-            <Col xs={12} md={6}>
-              <Breadcrumb>
+            </div>
+            <div className="col-xs-12 col-md-6">
+              {/* <Breadcrumb>
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                 {children}
-              </Breadcrumb>
-            </Col>
+              </Breadcrumb> */}
+            </div>
           </div>
         </div>
       </div>
