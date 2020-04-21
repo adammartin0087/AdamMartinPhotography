@@ -60,7 +60,7 @@ const Home = () => {
         </Col>
         <Col lg={3}>
           <Link to="/landscape" title="Landscape">
-            <ShadowImage alt="Landscape" src={galleryService.getImageUrl("Kirkjufell-Iceland", w, h)} />
+            <ShadowImage alt="Landscape" src={galleryService.getImageUrl("Optimized/Kirkjufell-Iceland", w, h)} />
             <h2 className="tile">Landscape</h2>
           </Link>
         </Col>
