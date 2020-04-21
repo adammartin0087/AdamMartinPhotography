@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "glob-all": "^3.2.1",
+    "mini-css-extract-plugin": "^0.9.0",
     "path": "^0.12.7",
     "purgecss-webpack-plugin": "^2.1.2",
     "purgecss-whitelister": "^2.4.0"

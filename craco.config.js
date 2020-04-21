@@ -1,12 +1,12 @@
 const path = require("path");
 const fs = require("fs");
 const glob = require("glob-all");
-const whitelister = require("purgecss-whitelister");
 
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = (relativePath) => path.resolve(appDirectory, relativePath);
 
 const PurgecssPlugin = require("purgecss-webpack-plugin");
+const whitelister = require("purgecss-whitelister");
 
 module.exports = {
   webpack: {
