@@ -40,25 +40,25 @@ const Home = () => {
         </Carousel>
       </Row>
       <Row className="mt-4">
-        <Col lg={3}>
+        <Col lg={3} sm={6}>
           <Link to="/underwater" title="Underwater">
             <ShadowImage alt="Underwater" src={galleryService.getImageUrl("Optimized/Humpbacks-Surfacing", w, h)} />
             <h2 className="tile">Underwater</h2>
           </Link>
         </Col>
-        <Col lg={3}>
+        <Col lg={3} sm={6}>
           <Link to="/pumas" title="Pumas">
             <ShadowImage alt="Pumas" src={galleryService.getImageUrl("Optimized/Puma-Approaching", w, h)} />
             <h2 className="tile">Pumas</h2>
           </Link>
         </Col>
-        <Col lg={3}>
+        <Col lg={3} sm={6}>
           <Link to="/aerial" title="Aerial">
             <ShadowImage alt="Aerial" src={galleryService.getImageUrl("Darwins_Arch_Aerial", w, h)} />
             <h2 className="tile">Aerial</h2>
           </Link>
         </Col>
-        <Col lg={3}>
+        <Col lg={3} sm={6}>
           <Link to="/landscape" title="Landscape">
             <ShadowImage alt="Landscape" src={galleryService.getImageUrl("Optimized/Kirkjufell-Iceland", w, h)} />
             <h2 className="tile">Landscape</h2>
