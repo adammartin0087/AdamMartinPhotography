@@ -11,6 +11,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <Row>
+        <h1 className="d-none">Adam Martin Photography</h1>
         <Carousel>
           <Carousel.Item>
             <Image
@@ -42,21 +43,25 @@ const Home = () => {
         <Col lg={3}>
           <Link to="/underwater" title="Underwater">
             <ShadowImage alt="Underwater" src={galleryService.getImageUrl("Humpback-Portrait", w, h)} />
+            <h2 className="tile">Underwater</h2>
           </Link>
         </Col>
         <Col lg={3}>
           <Link to="/pumas" title="Pumas">
             <ShadowImage alt="Pumas" src={galleryService.getImageUrl("Puma-Approaching", w, h)} />
+            <h2 className="tile">Pumas</h2>
           </Link>
         </Col>
         <Col lg={3}>
           <Link to="/aerial" title="Aerial">
             <ShadowImage alt="Aerial" src={galleryService.getImageUrl("Darwins-Arch-Galapagos", w, h)} />
+            <h2 className="tile">Aerial</h2>
           </Link>
         </Col>
         <Col lg={3}>
           <Link to="/landscape" title="Landscape">
             <ShadowImage alt="Landscape" src={galleryService.getImageUrl("Mirador-Las-Torres", w, h)} />
+            <h2 className="tile">Landscape</h2>
           </Link>
         </Col>
       </Row>

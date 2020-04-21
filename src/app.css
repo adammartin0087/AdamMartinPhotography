@@ -71,6 +71,17 @@ a {
   color: white;
 }
 
+.tile {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
 .footer,
 .footer a {
   font-size: 0.85rem;
