@@ -33,6 +33,11 @@ a {
   color: #0077c0;
 }
 
+.badge {
+  background-color: #0077c0;
+  color: white;
+}
+
 .small {
   font-size: 0.7rem;
 }
@@ -73,7 +78,7 @@ a {
 
 .tile {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 0;
   width: 100%;
   text-align: center;

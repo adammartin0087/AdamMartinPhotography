@@ -38,7 +38,7 @@ class GalleryGrid extends Component {
           <Breadcrumb.Item active>{this.state.category}</Breadcrumb.Item>
         </TitleBar>
 
-        {this.state.images && this.state.images.map((image) => <GalleryImage category={image.category} key={image.name} image={image} />)}
+        {this.state.images && this.state.images.map((image) => <GalleryImage category={image.category} key={image.code} image={image} />)}
       </Row>
     );
   }

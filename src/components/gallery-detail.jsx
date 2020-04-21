@@ -30,26 +30,26 @@ class GalleryDetail extends Component {
             <Breadcrumb.Item href={`/${image.category.toLowerCase()}`}>{image.category}</Breadcrumb.Item>
             <Breadcrumb.Item active>Details</Breadcrumb.Item>
           </TitleBar>
-          <Container>
-            <ShadowImage src={galleryService.getImageUrl(image.code, 800, 500)} alt={image.name} />
+          <Container className="text-center">
+            <ShadowImage src={galleryService.getImageUrl(image.code, 800, null)} alt={image.name} />
             <Row className="pb-3">
-              <Col md={4}>
-                <h3 className="mb-3">Location:</h3>
+              <Col md={12} lg={4} className="mb-2">
+                <strong>Location:</strong>
                 <Icon icon="map-marker" className="ml-3" /> {image.location}
               </Col>
 
-              <Col md={4}>
-                <h3 className="mb-3">Camera:</h3>
+              <Col md={12} lg={4} className="mb-2">
+                <strong>Camera:</strong>
                 <Icon icon="camera" className="ml-3" /> {image.camera}
               </Col>
 
-              <Col md={4}>
-                <h3 className="mb-3">Tags:</h3>
+              <Col md={12} lg={4} className="mb-2">
+                <strong>Tags:</strong>
                 {image.tags && (
-                  <ul>
+                  <ul className="d-inline">
                     {image.tags.map((tag) => (
-                      <li className="list-inline-item py-2 px-3" key={tag}>
-                        <Badge variant="primary">{tag}</Badge>
+                      <li className="list-inline-item" key={tag}>
+                        <Badge>{tag}</Badge>
                       </li>
                     ))}
                   </ul>
