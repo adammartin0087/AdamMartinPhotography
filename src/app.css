@@ -60,6 +60,7 @@ a {
 .breadcrumb {
   justify-content: flex-end;
   padding: 0.5rem 1rem;
+  margin-top: 0;
   margin-bottom: 0;
   background-color: transparent;
 }
