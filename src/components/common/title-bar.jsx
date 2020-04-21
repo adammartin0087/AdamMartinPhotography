@@ -1,5 +1,5 @@
 import React from "react";
-
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 const TitleBar = ({ title, children }) => {
   return (
     title && (
@@ -10,10 +10,10 @@ const TitleBar = ({ title, children }) => {
               <h1>{title}</h1>
             </div>
             <div className="col-xs-12 col-md-6">
-              {/* <Breadcrumb>
+              <Breadcrumb>
                 <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
                 {children}
-              </Breadcrumb> */}
+              </Breadcrumb>
             </div>
           </div>
         </div>

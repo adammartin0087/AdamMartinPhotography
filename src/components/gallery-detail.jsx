@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 import galleryService from "../services/galleryService";
 import ShadowImage from "./common/shadow-image";
 import Icon from "./common/icon";
@@ -26,8 +27,8 @@ class GalleryDetail extends Component {
             <title>{image.name}</title>
           </Helmet>
           <TitleBar title={image.name}>
-            {/* <Breadcrumb.Item href={`/${image.category.toLowerCase()}`}>{image.category}</Breadcrumb.Item>
-            <Breadcrumb.Item active>Details</Breadcrumb.Item> */}
+            <Breadcrumb.Item href={`/${image.category.toLowerCase()}`}>{image.category}</Breadcrumb.Item>
+            <Breadcrumb.Item active>Details</Breadcrumb.Item>
           </TitleBar>
           <div className="container text-center">
             <ShadowImage src={galleryService.getImageUrl(image.code, 1000, 667)} alt={image.name} />

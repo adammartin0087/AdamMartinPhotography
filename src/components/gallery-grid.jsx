@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 import galleryService from "../services/galleryService";
 import GalleryImage from "./gallery-image";
 import TitleBar from "./common/title-bar";
@@ -33,7 +34,9 @@ class GalleryGrid extends Component {
         <Helmet>
           <title>{this.state.category}</title>
         </Helmet>
-        <TitleBar title={this.state.category}>{/* <Breadcrumb.Item active>{this.state.category}</Breadcrumb.Item> */}</TitleBar>
+        <TitleBar title={this.state.category}>
+          <Breadcrumb.Item active>{this.state.category}</Breadcrumb.Item>
+        </TitleBar>
 
         {this.state.images && this.state.images.map((image) => <GalleryImage category={image.category} key={image.code} image={image} />)}
       </div>

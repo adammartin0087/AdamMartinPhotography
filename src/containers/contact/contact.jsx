@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 import TitleBar from "../../components/common/title-bar";
 
 const Contact = () => {
@@ -9,7 +10,9 @@ const Contact = () => {
         <Helmet>
           <title>Contact</title>
         </Helmet>
-        <TitleBar title="Contact">{/* <Breadcrumb.Item active>Contact</Breadcrumb.Item> */}</TitleBar>
+        <TitleBar title="Contact">
+          <Breadcrumb.Item active>Contact</Breadcrumb.Item>
+        </TitleBar>
         <div className="container">
           <p className="mb-5">Thank you for your interest. Please fill out the contact form below:</p>
 

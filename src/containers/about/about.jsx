@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 import galleryService from "../../services/galleryService";
 import ShadowImage from "../../components/common/shadow-image";
 import TitleBar from "../../components/common/title-bar";
@@ -10,7 +11,9 @@ const About = () => {
       <Helmet>
         <title>About</title>
       </Helmet>
-      <TitleBar title="About">{/* <Breadcrumb.Item active>About</Breadcrumb.Item> */}</TitleBar>
+      <TitleBar title="About">
+        <Breadcrumb.Item active>About</Breadcrumb.Item>
+      </TitleBar>
       <div className="container">
         <div className="row">
           <div className="col-md-4">
