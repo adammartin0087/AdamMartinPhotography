@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const glob = require("glob-all");
+const whitelister = require("purgecss-whitelister");
 
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = (relativePath) => path.resolve(appDirectory, relativePath);
@@ -12,6 +13,7 @@ module.exports = {
     plugins: [
       new PurgecssPlugin({
         paths: [resolveApp("public/index.html"), ...glob.sync(`${resolveApp("src")}/**/**/*`, { nodir: true })],
+        whitelist: whitelister("bootstrap/dist/css/bootstrap.css"),
       }),
     ],
   },

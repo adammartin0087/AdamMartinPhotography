@@ -47,6 +47,7 @@
   "devDependencies": {
     "glob-all": "^3.2.1",
     "path": "^0.12.7",
-    "purgecss-webpack-plugin": "^2.1.2"
+    "purgecss-webpack-plugin": "^2.1.2",
+    "purgecss-whitelister": "^2.4.0"
   }
 }
