@@ -16,7 +16,7 @@ const Home = () => {
           <Carousel.Item>
             <Image
               className="d-block w-100"
-              src={galleryService.getImageUrl("Optimized/Crocodile-Sunset", 1920, 700)}
+              src={galleryService.getImageUrl("Optimized/Crocodile-Sunset", 1920, 800)}
               alt="American Crocodile - Jardines de la Reina, Cuba"
               title="American Crocodile - Jardines de la Reina, Cuba"
             />
@@ -24,7 +24,7 @@ const Home = () => {
           <Carousel.Item>
             <Image
               className="d-block w-100"
-              src={galleryService.getImageUrl("Optimized/Moorea", 1920, 700)}
+              src={galleryService.getImageUrl("Optimized/Moorea", 1920, 800)}
               alt="Moorea, French Polynesia"
               title="Moorea, French Polynesia"
             />
@@ -32,7 +32,7 @@ const Home = () => {
           <Carousel.Item>
             <Image
               className="d-block w-100"
-              src={galleryService.getImageUrl("Optimized/Fakarava-Reef", 1920, 700)}
+              src={galleryService.getImageUrl("Optimized/Fakarava-Reef", 1920, 800)}
               alt="Fakarava, French Polynesia"
               title="Fakarava, French Polynesia"
             />
