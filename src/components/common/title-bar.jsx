@@ -4,9 +4,9 @@ import { Container, Col, Row, Breadcrumb } from "react-bootstrap/";
 const TitleBar = ({ title, children }) => {
   return (
     title && (
-      <Container fluid className="titleBar py-3 mb-4 text-light">
-        <Container>
-          <Row>
+      <div className="container-fluid titleBar py-3 mb-4 text-light">
+        <div className="container">
+          <div class="row">
             <Col xs={12} md={6}>
               <h1>{title}</h1>
             </Col>
@@ -16,9 +16,9 @@ const TitleBar = ({ title, children }) => {
                 {children}
               </Breadcrumb>
             </Col>
-          </Row>
-        </Container>
-      </Container>
+          </div>
+        </div>
+      </div>
     )
   );
 };
