@@ -13,7 +13,7 @@ module.exports = {
     plugins: [
       new PurgecssPlugin({
         paths: [resolveApp("public/index.html"), ...glob.sync(`${resolveApp("src")}/**/**/*`, { nodir: true })],
-        whitelist: whitelister("bootstrap/dist/css/bootstrap.css"),
+        whitelist: [...whitelister("bootstrap/dist/css/bootstrap.css"), "navbar"],
       }),
     ],
   },
