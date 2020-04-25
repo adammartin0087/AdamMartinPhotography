@@ -1,0 +1,51 @@
+.container {
+  width: 520px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.monumentDetails {
+  padding: 20px 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.leading {
+  margin: 10px 0px;
+}
+.title {
+  font-size: 24px;
+  line-height: 32px;
+  padding: 4px 0px;
+}
+.region {
+  color: #f5f5f5;
+  font-weight: 400;
+}
+.description {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 12px;
+  line-height: 26px;
+  overflow: auto;
+}
+.footer {
+  border-bottom: 1px solid #edeaea;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+.allSites {
+  display: flex;
+  align-items: center;
+  width: 56px;
+  height: 100%;
+  justify-content: center;
+  font-weight: 400;
+  cursor: pointer;
+  border-right: 1px solid #edeaea;
+}
+.back {
+  margin-right: 4px;
+}

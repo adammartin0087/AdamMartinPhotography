@@ -9,6 +9,8 @@ const images = [
     camera: "DJI Phantom 3 Pro",
     tags: [],
     order: 0,
+    latitude: 39.0981336,
+    longitude: -106.9447112,
   },
   {
     category: "Underwater",
@@ -20,7 +22,10 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: ["Sharks", "Cuba"],
     order: 0,
+    latitude: 20.84,
+    longitude: -78.93,
   },
+
   {
     category: "Underwater",
     name: "American Crocodile",
@@ -31,6 +36,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 10,
+    latitude: 20.769608,
+    longitude: -78.816386,
   },
   {
     category: "Underwater",
@@ -42,7 +49,10 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 20,
+    latitude: -0.948353,
+    longitude: -90.9809562,
   },
+
   {
     category: "Underwater",
     name: "Humpback Portrait",
@@ -53,6 +63,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 30,
+    latitude: -17.5334556,
+    longitude: -149.9053564,
   },
   {
     category: "Underwater",
@@ -64,17 +76,21 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 45,
+    latitude: -17.5334556,
+    longitude: -149.9053564,
   },
   {
     category: "Underwater",
     name: "Kelp Forest",
     code: "Kelp-Forest",
     imageUrl: "kelp-forest",
-    location: "Santa Barbara Islamd, California",
+    location: "Santa Barbara Island, California",
     date: "7/26/2015",
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 50,
+    latitude: 33.4769828,
+    longitude: -119.0472799,
   },
   {
     category: "Underwater",
@@ -86,6 +102,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: ["Crocodiles", "Cuba"],
     order: 100,
+    latitude: 20.8416771,
+    longitude: -78.9375894,
   },
   {
     category: "Landscape",
@@ -97,6 +115,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 39.0981336,
+    longitude: -106.9447112,
   },
   {
     category: "Astrophotography",
@@ -108,7 +128,10 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -44.7163518,
+    longitude: 168.9702668,
   },
+
   {
     category: "Landscape",
     name: "Bartolome Island",
@@ -119,7 +142,10 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -0.285123,
+    longitude: -90.5590905,
   },
+
   {
     category: "Astrophotography",
     name: "Boulder",
@@ -130,6 +156,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 39.999479,
+    longitude: -105.281133,
   },
   {
     category: "Underwater",
@@ -141,7 +169,10 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 20.2741613,
+    longitude: -87.4883593,
   },
+
   {
     category: "Aerial",
     name: "Colorado",
@@ -152,6 +183,8 @@ const images = [
     camera: "DJI Phantom 3 Pro",
     tags: [],
     order: 100,
+    latitude: 39.0981336,
+    longitude: -106.9447112,
   },
   {
     category: "Underwater",
@@ -163,6 +196,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 20.8416771,
+    longitude: -78.9375894,
   },
   {
     category: "Underwater",
@@ -174,7 +209,10 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -51.0368291,
+    longitude: -73.0170619,
   },
+
   {
     category: "Aerial",
     name: "Darwin\u0027s Arch",
@@ -185,6 +223,8 @@ const images = [
     camera: "DJI Phantom 3 Pro",
     tags: ["Galápagos"],
     order: 100,
+    latitude: 1.6718717,
+    longitude: -91.9907743,
   },
   {
     category: "Underwater",
@@ -196,10 +236,12 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 64.2313204,
+    longitude: -21.0814974,
   },
   {
     category: "Underwater",
-    name: "Dreamgate Cenote",
+    name: "Dream Gate Cenote",
     code: "Dreamgate",
     imageUrl: "Dreamgate",
     location: "Mexico",
@@ -207,6 +249,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 20.3052444,
+    longitude: -87.3929751,
   },
   {
     category: "Aerial",
@@ -218,6 +262,8 @@ const images = [
     camera: "DJI Phantom 3 Pro",
     tags: [],
     order: 100,
+    latitude: 65.7328135,
+    longitude: -23.2020307,
   },
   {
     category: "Landscape",
@@ -229,10 +275,13 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 64.1491952,
+    longitude: -19.7402001,
   },
+
   {
     category: "Aerial",
-    name: "Glacier in Iceland",
+    name: "Vatnajokull Glacier",
     code: "Glacier-Iceland",
     imageUrl: "Glacier-Iceland",
     location: "Iceland",
@@ -240,6 +289,8 @@ const images = [
     camera: "DJI Phantom 3 Pro",
     tags: [],
     order: 100,
+    latitude: 64.0051645,
+    longitude: -16.8602883,
   },
   {
     category: "Landscape",
@@ -251,6 +302,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 39.0981336,
+    longitude: -106.9447112,
   },
   {
     category: "Astrophotography",
@@ -262,6 +315,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 37.7551467,
+    longitude: -105.752133,
   },
   {
     category: "Underwater",
@@ -273,6 +328,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 27.19274,
+    longitude: 33.641283,
   },
   {
     category: "Aerial",
@@ -284,6 +341,8 @@ const images = [
     camera: "DJI Phantom 3 Pro",
     tags: [],
     order: 100,
+    latitude: 18.8744941,
+    longitude: -72.713696,
   },
   {
     category: "Underwater",
@@ -295,6 +354,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -17.5334556,
+    longitude: -149.9053564,
   },
   {
     category: "Underwater",
@@ -306,6 +367,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -17.5334556,
+    longitude: -149.9053564,
   },
   {
     category: "Aerial",
@@ -315,8 +378,10 @@ const images = [
     location: "Iceland",
     date: "1/24/2017",
     camera: "DJI Phantom 3 Pro",
-    tags: [],
+    tags: ["Iceland"],
     order: 100,
+    latitude: 65.6409166,
+    longitude: -16.811505,
   },
   {
     category: "Landscape",
@@ -326,12 +391,14 @@ const images = [
     location: "Iceland",
     date: "1/24/2017",
     camera: "Canon EOS 5D Mk III",
-    tags: [],
+    tags: ["Iceland"],
     order: 100,
+    latitude: 64.2117142,
+    longitude: -21.795013,
   },
   {
     category: "Landscape",
-    name: "Kirkjufell",
+    name: "Kirkjufellsfoss",
     code: "Kirkjufell-Iceland",
     imageUrl: "Kirkjufell-Iceland",
     location: "Iceland",
@@ -339,10 +406,12 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: ["Iceland"],
     order: 100,
+    latitude: 64.9261547,
+    longitude: -23.3115577,
   },
   {
     category: "Aerial",
-    name: "Kirkjufell, Iceland",
+    name: "Kirkjufell Mountain, Iceland",
     code: "Kirkjufell-Iceland",
     imageUrl: "Kirkjufell-Aerial-Iceland",
     location: "Iceland",
@@ -350,6 +419,8 @@ const images = [
     camera: "DJI Phantom 3 Pro",
     tags: ["Iceland"],
     order: 100,
+    latitude: 64.9399395,
+    longitude: -23.3085596,
   },
   {
     category: "Landscape",
@@ -359,8 +430,10 @@ const images = [
     location: "Patagonia, Chile",
     date: "1/24/2017",
     camera: "Canon EOS 5D Mk III",
-    tags: [],
+    tags: ["Patagonia", "Torres del Paine"],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Aerial",
@@ -372,6 +445,8 @@ const images = [
     camera: "DJI Phantom 3 Pro",
     tags: ["California"],
     order: 100,
+    latitude: 37.5955759,
+    longitude: -119.0182911,
   },
   {
     category: "Landscape",
@@ -383,6 +458,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: ["Colorado"],
     order: 100,
+    latitude: 39.0981336,
+    longitude: -106.9447112,
   },
   {
     category: "Landscape",
@@ -394,6 +471,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: ["Colorado"],
     order: 100,
+    latitude: 39.0981336,
+    longitude: -106.9447112,
   },
   {
     category: "Landscape",
@@ -405,6 +484,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: ["Patagonia", "Chile"],
     order: 100,
+    latitude: -50.9429016,
+    longitude: -72.9486378,
   },
   {
     category: "Underwater",
@@ -416,6 +497,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: ["Moorea", "French Polynesia"],
     order: 100,
+    latitude: -17.5334556,
+    longitude: -149.9053564,
   },
   {
     category: "Underwater",
@@ -427,6 +510,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -54.8671241,
+    longitude: -68.2524701,
   },
   {
     category: "Landscape",
@@ -438,6 +523,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -51.1015445,
+    longitude: -72.9800617,
   },
   {
     category: "Astrophotography",
@@ -449,6 +536,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -51.1015445,
+    longitude: -72.9800617,
   },
   {
     category: "Aerial",
@@ -460,6 +549,8 @@ const images = [
     camera: "DJI Phantom 3 Pro",
     tags: [],
     order: 100,
+    latitude: 13.521951,
+    longitude: 120.9624714,
   },
   {
     category: "Pumas",
@@ -471,6 +562,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -482,6 +575,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -493,6 +588,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -504,6 +601,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -515,6 +614,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -526,6 +627,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -537,6 +640,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -548,6 +653,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -559,6 +666,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -570,6 +679,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -581,6 +692,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -592,6 +705,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -603,6 +718,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -614,6 +731,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -625,6 +744,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -636,6 +757,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -647,6 +770,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -658,6 +783,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -669,6 +796,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Pumas",
@@ -680,17 +809,21 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -50.9754707,
+    longitude: -72.7542263,
   },
   {
     category: "Underwater",
-    name: "Raggie",
+    name: "Raggedtooh Shark",
     code: "Raggie",
     imageUrl: "Raggie",
-    location: "South Africa",
+    location: "Wild Coast, South Africa",
     date: "1/1/2018",
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -31.6321454,
+    longitude: 29.5670639,
   },
   {
     category: "Underwater",
@@ -702,6 +835,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 20.2358326,
+    longitude: 29.5064425,
   },
   {
     category: "Landscape",
@@ -713,6 +848,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -44.7260077,
+    longitude: 168.1992213,
   },
   {
     category: "Underwater",
@@ -724,6 +861,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 64.2544555,
+    longitude: -21.1183057,
   },
   {
     category: "Underwater",
@@ -735,6 +874,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 20.8416771,
+    longitude: -78.9375894,
   },
   {
     category: "Underwater",
@@ -746,6 +887,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 20.8416771,
+    longitude: -78.9375894,
   },
   {
     category: "Landscape",
@@ -757,6 +900,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -40.8477817,
+    longitude: 172.7689854,
   },
   {
     category: "Landscape",
@@ -768,6 +913,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -51.1236918,
+    longitude: -73.1409474,
   },
   {
     category: "Landscape",
@@ -779,6 +926,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 64.2446368,
+    longitude: -14.9667399,
   },
   {
     category: "Underwater",
@@ -790,6 +939,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: 25.0151945,
+    longitude: 35.5723548,
   },
   {
     category: "Landscape",
@@ -801,6 +952,8 @@ const images = [
     camera: "Canon EOS 5D Mk III",
     tags: [],
     order: 100,
+    latitude: -40.5016557,
+    longitude: 172.6768832,
   },
   {
     category: "Aerial",
@@ -812,6 +965,8 @@ const images = [
     camera: "DJI Phantom 3 Pro",
     tags: [],
     order: 100,
+    latitude: 1.384518,
+    longitude: -91.8273462,
   },
   {
     category: "Aerial",
@@ -823,6 +978,8 @@ const images = [
     camera: "DJI Phantom 3 Pro",
     tags: ["Galápagos"],
     order: 200,
+    latitude: 1.678061,
+    longitude: -92.0122074,
   },
   {
     category: "Aerial",
@@ -834,6 +991,8 @@ const images = [
     camera: "DJI Phantom 3 Pro",
     tags: ["New Mexico"],
     order: 200,
+    latitude: 36.3271663,
+    longitude: -106.478243,
   },
 ];
 
@@ -842,6 +1001,10 @@ export function getImageUrl(code, w, h) {
   const height = h > 0 ? ",h_" + h : "";
   return `https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill${width}${height}/${code}`;
   // return `https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill${width}${height},dpr_2.0/${code}`;
+}
+
+export function getAll() {
+  return images;
 }
 
 export function getImages(category) {
@@ -872,6 +1035,7 @@ export function getCategory(category) {
 }
 
 export default {
+  getAll,
   getImages,
   getImage,
   getCategory,
