@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Helmet from "react-helmet";
 import { Route } from "react-router-dom";
 import { throttle } from "lodash";
-import { isMobile } from "react-device-detect";
 import galleryService from "../../services/galleryService";
 import ImageMap from "./../../components/image-map/image-map";
 import ExploreList from "./explore-list";
@@ -13,11 +12,6 @@ const defaultPitch = [0];
 const defaultBearing = [0];
 const defaultSpeed = [0.6];
 const defaultCenter = [-90, 30];
-
-const mapStyles = {
-  position: "relative",
-  height: isMobile ? "30vh" : "90vh",
-};
 
 class Explore extends Component {
   state = {
@@ -171,7 +165,6 @@ class Explore extends Component {
                 BoundsChanged={this.BoundsChanged}
                 mapInit={this.mapInit}
                 onClick={this.onClick}
-                containerStyle={mapStyles}
               />
             </div>
 

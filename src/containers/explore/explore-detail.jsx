@@ -34,9 +34,7 @@ class ExploreDetail extends Component {
     return (
       image && (
         <div className="explore-detail">
-          <div className="col-9 col-md-12 text-center">
-            {image.imageUrl && <ShadowImage src={getImageUrl(image.imageUrl, 520, 300)} alt={image.name} />}
-          </div>
+          <div className="text-center">{image.imageUrl && <ShadowImage src={getImageUrl(image.imageUrl, 520, 300)} alt={image.name} />}</div>
 
           <div className="monumentDetails">
             <h1 className="title">{image.name}</h1>

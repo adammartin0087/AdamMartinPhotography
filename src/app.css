@@ -214,3 +214,14 @@ a {
 .mapboxgl-ctrl.mapboxgl-ctrl-attrib {
   display: none;
 }
+
+.mapboxgl-map {
+  position: relative;
+  height: 90vh;
+}
+
+@media screen and (max-width: 768px) {
+  .mapboxgl-map {
+    height: 30vh;
+  }
+}
