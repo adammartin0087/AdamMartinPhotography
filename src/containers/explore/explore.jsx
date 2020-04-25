@@ -2,10 +2,8 @@ import React, { Component } from "react";
 import Helmet from "react-helmet";
 import { Route } from "react-router-dom";
 import { throttle } from "lodash";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
 import galleryService from "../../services/galleryService";
 import ImageMap from "./../../components/image-map/image-map";
-import TitleBar from "./../../components/common/title-bar";
 import ExploreList from "./explore-list";
 import ExploreDetail from "./explore-detail";
 
@@ -13,7 +11,7 @@ const defaultZoom = [0];
 const defaultPitch = [0];
 const defaultBearing = [0];
 const defaultSpeed = [0.6];
-const defaultCenter = [-60.4915, -25.7832];
+const defaultCenter = [-90, 30];
 
 const mapStyles = {
   position: "relative",
@@ -158,10 +156,6 @@ class Explore extends Component {
         <Helmet>
           <title>Explore</title>
         </Helmet>
-        {/* <TitleBar title="Explore" bottomMargin={0}>
-          <Breadcrumb.Item active>Explore</Breadcrumb.Item>
-        </TitleBar> */}
-
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-8 p-0">

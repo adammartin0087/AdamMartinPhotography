@@ -34,6 +34,18 @@ class ExploreDetail extends Component {
     return (
       image && (
         <div className="explore-detail">
+          <div className="col-9 col-md-12 text-center">
+            {image.imageUrl && <ShadowImage src={getImageUrl(image.imageUrl, 520, 300)} alt={image.name} />}
+          </div>
+
+          <div className="monumentDetails">
+            <h1 className="title">{image.name}</h1>
+            <div className="leading">{image.category}</div>
+            <div className="description">
+              <Icon icon="map-marker" style={{ width: 14 }} className="mr-2" /> {image.location}
+            </div>
+          </div>
+
           <div className="buttons">
             <div className="navbutton" onClick={() => this.onCycleImage(image.code, -1)}>
               <Icon icon="arrow-left" className="mr-2" />
@@ -45,16 +57,6 @@ class ExploreDetail extends Component {
             </div>
             <div className="navbutton" style={{ flexGrow: 1 }} onClick={this.onGoBack}>
               <Icon icon="window-close" />
-            </div>
-          </div>
-          <div className="text-center">{image.imageUrl && <ShadowImage src={getImageUrl(image.imageUrl, 520, 300)} alt={image.name} />}</div>
-          <div className="monumentDetails">
-            <h1 className="title">{image.name}</h1>
-            <div className="leading">{image.category}</div>
-            <div className="description">
-              <Icon icon="map-marker" style={{ width: 14 }} className="mr-2" /> {image.location} <br />
-              <Icon icon="camera" style={{ width: 14 }} className="mr-2" /> {image.camera} <br />
-              <Icon icon="calendar" style={{ width: 14 }} className="mr-2" /> {image.date} <br />
             </div>
           </div>
         </div>

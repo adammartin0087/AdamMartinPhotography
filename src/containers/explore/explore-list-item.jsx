@@ -10,7 +10,7 @@ const ExploreListItem = ({ image, onMouseEnter, onMouseLeave, onClick }) => (
       </div>
     </div>
     <div className="image">
-      <img src={getImageUrl(image.imageUrl, 90, 60)} alt={image.name} />
+      <img src={getImageUrl(image.imageUrl, 100, 67)} alt={image.name} className="rounded" />
     </div>
   </div>
 );
