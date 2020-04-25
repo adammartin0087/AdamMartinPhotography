@@ -50,6 +50,7 @@ module.exports = {
           "carousel-control-prev-icon",
           "carousel-control-next",
           "carousel-control-next-icon",
+          "mapboxgl-map",
           "mapboxgl-ctrl",
           "mapboxgl-ctrl-attrib",
         ],
