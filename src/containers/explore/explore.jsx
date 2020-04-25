@@ -21,7 +21,7 @@ const mapStyles = {
   right: 0,
   bottom: 500,
   top: 0,
-  height: "40vh",
+  height: "30vh",
 };
 
 class Explore extends Component {

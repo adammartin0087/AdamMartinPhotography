@@ -210,3 +210,7 @@ a {
 .explore-detail .navbutton:hover {
   background-color: #addaf7;
 }
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib {
+  display: none;
+}
