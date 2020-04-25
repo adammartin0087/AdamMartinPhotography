@@ -33,12 +33,11 @@ class ExploreDetail extends Component {
 
     return (
       image && (
-        <div className="explore-detail">
+        <div className="explore-detail mt-1">
           <div className="text-center">{image.imageUrl && <ShadowImage src={getImageUrl(image.imageUrl, 520, 300)} alt={image.name} />}</div>
 
           <div className="monumentDetails">
             <h1 className="title">{image.name}</h1>
-            <div className="leading">{image.category}</div>
             <div className="description">
               <Icon icon="map-marker" style={{ width: 14 }} className="mr-2" /> {image.location}
             </div>
@@ -54,7 +53,7 @@ class ExploreDetail extends Component {
               <Icon icon="arrow-right" className="ml-2" />
             </div>
             <div className="navbutton" style={{ flexGrow: 1 }} onClick={this.onGoBack}>
-              <Icon icon="window-close" />
+              <small>EXIT</small>
             </div>
           </div>
         </div>
