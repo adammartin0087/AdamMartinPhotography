@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Helmet from "react-helmet";
 import { Route } from "react-router-dom";
 import { throttle } from "lodash";
+import { isMobile } from "react-device-detect";
 import galleryService from "../../services/galleryService";
 import ImageMap from "./../../components/image-map/image-map";
 import ExploreList from "./explore-list";
@@ -15,11 +16,7 @@ const defaultCenter = [-90, 30];
 
 const mapStyles = {
   position: "relative",
-  left: 0,
-  right: 0,
-  bottom: 500,
-  top: 0,
-  height: "30vh",
+  height: isMobile ? "30vh" : "90vh",
 };
 
 class Explore extends Component {

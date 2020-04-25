@@ -17,6 +17,7 @@
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
+    "react-device-detect": "^1.12.0",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-lazy-images": "^1.1.0",
