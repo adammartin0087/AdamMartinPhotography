@@ -1,9 +1,10 @@
 import React from "react";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-const TitleBar = ({ title, children }) => {
+const TitleBar = ({ title, children, bottomMargin }) => {
+  const margin = bottomMargin >= 0 ? bottomMargin : 4;
   return (
     title && (
-      <div className="container-fluid titleBar py-3 mb-4 text-light">
+      <div className={`container-fluid titleBar py-3 mb-${margin} text-light`}>
         <div className="container">
           <div class="row">
             <div className="col-xs-12 col-md-6">

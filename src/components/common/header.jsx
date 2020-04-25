@@ -47,6 +47,9 @@ class Header extends Component {
                     Astrophotography
                   </NavDropdown.Item>
                 </NavDropdown>
+                <Nav.Link as={NavLink} to="/explore" title="Explore" onClick={this.collapse}>
+                  Explore
+                </Nav.Link>
                 <Nav.Link as={NavLink} to="/awards" title="Awards" onClick={this.collapse}>
                   Awards
                 </Nav.Link>

@@ -23,7 +23,7 @@ class ImageMap extends Component {
   };
 
   render() {
-    const { images, maxBounds, BoundsChanged, mapInit, center, zoom, hoveredItem, style, containerStyle } = this.props;
+    const { images, maxBounds, BoundsChanged, mapInit, center, zoom, pitch, speed, bearing, hoveredItem, style, containerStyle } = this.props;
     const hoveredImage = images.filter((image) => image.code === hoveredItem);
 
     return (
@@ -32,6 +32,10 @@ class ImageMap extends Component {
         style={style}
         center={center}
         zoom={zoom}
+        speed={speed}
+        bearing={bearing}
+        pitch={pitch}
+        movingMethod="flyTo"
         onStyleLoad={mapInit}
         containerStyle={containerStyle}
         onZoom={BoundsChanged}
