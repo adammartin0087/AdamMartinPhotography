@@ -8,7 +8,7 @@ import ExploreList from "./explore-list";
 import ExploreDetail from "./explore-detail";
 
 const defaultZoom = [0];
-const focusZoom = [11];
+const focusZoom = [12];
 const defaultPitch = [0];
 const defaultBearing = [0];
 const defaultSpeed = [0.6];
