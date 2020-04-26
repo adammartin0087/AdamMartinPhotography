@@ -159,12 +159,12 @@ a {
 
 /* DETAIL */
 
-.explore-detail {
+/* .explore-detail {
   height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
 .explore-image {
   display: flex;
@@ -193,14 +193,14 @@ a {
   line-height: 26px;
   overflow: auto;
 }
-.explore-detail .buttons {
+.explore-buttons {
   border-top: 1px solid #edeaea;
   border-bottom: 1px solid #edeaea;
   height: 56px;
   display: flex;
   align-items: center;
 }
-.explore-detail .navbutton {
+.explore-buttons .navbutton {
   display: flex;
   align-items: center;
   flex-grow: 2;
@@ -211,7 +211,7 @@ a {
   border-right: 1px solid #edeaea;
 }
 
-.explore-detail .navbutton:hover {
+.explore-buttons .navbutton:hover {
   background-color: #addaf7;
 }
 
@@ -228,4 +228,10 @@ a {
   .mapboxgl-map {
     height: 30vh;
   }
+}
+
+.tester {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
