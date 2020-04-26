@@ -8,9 +8,7 @@ class Layout extends Component {
     const { children } = this.props;
     return (
       <React.Fragment>
-        <Helmet defaultTitle="Adam Martin Photography" titleTemplate="%s | Adam Martin Photography">
-          <meta name="Description" content="Underwater and aerial imagery from around the world." />
-        </Helmet>
+        <Helmet defaultTitle="Adam Martin Photography" titleTemplate="%s | Adam Martin Photography" />
         <Header />
         <main className="mb-5">
           <div className="container-fluid">{children}</div>

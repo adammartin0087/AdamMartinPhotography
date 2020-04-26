@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Helmet from "react-helmet";
 import { Route } from "react-router-dom";
 import { throttle } from "lodash";
 import galleryService from "../../services/galleryService";
 import ImageMap from "./../../components/image-map/image-map";
+import Head from "../../components/common/head";
 import ExploreList from "./explore-list";
 import ExploreDetail from "./explore-detail";
 
@@ -149,9 +149,7 @@ class Explore extends Component {
     const listImages = filteredImages.map((k) => images[k]);
     return (
       <div className="row">
-        <Helmet>
-          <title>Explore</title>
-        </Helmet>
+        <Head title="Explore" />
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-6 col-md-8 p-0">

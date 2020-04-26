@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Helmet from "react-helmet";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import galleryService from "../services/galleryService";
 import GalleryImage from "./gallery-image";
 import TitleBar from "./common/title-bar";
+import Head from "./common/head";
 
 class GalleryGrid extends Component {
   state = {
@@ -31,9 +31,7 @@ class GalleryGrid extends Component {
   render() {
     return (
       <div className="row">
-        <Helmet>
-          <title>{this.state.category}</title>
-        </Helmet>
+        <Head title={this.state.category} />
         <TitleBar title={this.state.category}>
           <Breadcrumb.Item active>{this.state.category}</Breadcrumb.Item>
         </TitleBar>

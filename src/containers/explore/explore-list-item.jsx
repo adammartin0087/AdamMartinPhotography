@@ -1,5 +1,5 @@
 import React from "react";
-import { getImageUrl } from "../../services/galleryService";
+import { Image, Transformation } from "cloudinary-react";
 
 const ExploreListItem = ({ image, onMouseEnter, onMouseLeave, onClick }) => (
   <div className="explore-list-item" onClick={onClick} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
@@ -10,7 +10,11 @@ const ExploreListItem = ({ image, onMouseEnter, onMouseLeave, onClick }) => (
       </div>
     </div>
     <div className="image">
-      <img src={getImageUrl(image.imageUrl, 100, 67)} alt={image.name} className="rounded" />
+      <Image cloudName="dtgitfbtp" className="rounded" publicId={image.imageUrl} alt={image.name}>
+        <Transformation aspectRatio="3:2" crop="fill" />
+        <Transformation width="100" dpr="auto" crop="scale" />
+        <Transformation quality="auto" fetchFormat="auto" gravity="custom" />
+      </Image>
     </div>
   </div>
 );

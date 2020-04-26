@@ -1,23 +1,20 @@
 import React from "react";
-import Helmet from "react-helmet";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-import galleryService from "../../services/galleryService";
 import ShadowImage from "../../components/common/shadow-image";
 import TitleBar from "../../components/common/title-bar";
+import Head from "../../components/common/head";
 
 const About = () => {
   return (
     <div className="row">
-      <Helmet>
-        <title>About</title>
-      </Helmet>
+      <Head title="About" />
       <TitleBar title="About">
         <Breadcrumb.Item active>About</Breadcrumb.Item>
       </TitleBar>
       <div className="container">
         <div className="row">
           <div className="col-md-4 mb-4">
-            <ShadowImage src={galleryService.getImageUrl("Adam", 400, 400)} alt="Adam Martin" />
+            <ShadowImage src="Adam" aspectRatio="1:1" alt="Adam Martin" />
           </div>
           <div className="col-md-8">
             <h2>Adam T. Martin</h2>

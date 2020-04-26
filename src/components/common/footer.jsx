@@ -1,15 +1,24 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import galleryService from "../../services/galleryService";
+import { Image, Transformation } from "cloudinary-react";
 import Icon from "./icon";
-
 const Footer = () => {
   return (
     <div className="container footer">
       <div className="row">
         <div className="col-sm-6 col-lg-3">
           <Link to="/">
-            <img className="img-fluid" src={galleryService.getImageUrl("AMP", null, null)} alt="Adam Martin Photography" width="80" />
+            <Image
+              cloudName="dtgitfbtp"
+              responsive
+              className="img-fluid"
+              responsiveUseBreakpoints="true"
+              publicId={"AMP"}
+              alt="Adam Martin Photography"
+              width="80"
+            >
+              <Transformation quality="auto" fetchFormat="auto" gravity="custom" dpr="auto" />
+            </Image>
           </Link>
           <p className="mt-4">2020 © All Rights Reserved.</p>
         </div>

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { getImageUrl } from "../../services/galleryService";
 import ShadowImage from "../../components/common/shadow-image";
 import Icon from "../../components/common/icon";
 
@@ -37,9 +36,7 @@ class ExploreDetail extends Component {
           <div className="explore-detail">
             <div>
               <div className="explore-image">
-                <div className="col-10 col-md-12">
-                  {image.imageUrl && <ShadowImage src={getImageUrl(image.imageUrl, 520, 300)} alt={image.name} />}
-                </div>
+                <div className="col-10 col-md-12">{image.imageUrl && <ShadowImage src={image.imageUrl} width="520" alt={image.name} />}</div>
               </div>
               <div className="monumentDetails">
                 <h1 className="title">{image.name}</h1>

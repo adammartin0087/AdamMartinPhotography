@@ -1,6 +1,5 @@
 import React from "react";
 import Parser from "html-react-parser";
-import galleryService from "../services/galleryService";
 import ShadowImage from "./common/shadow-image";
 import Icon from "./common/icon";
 
@@ -10,7 +9,7 @@ const Award = ({ award }) => {
       <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
         <div className="text-center">
           <a href={`${award.url}`} target="_blank" rel="noopener noreferrer" title={`${award.position} - ${award.name}`}>
-            <ShadowImage src={galleryService.getImageUrl(award.imageUrl, 350, null)} alt={award.title} title={award.title} />
+            <ShadowImage src={award.imageUrl} alt={award.title} title={award.title} />
           </a>
         </div>
       </div>

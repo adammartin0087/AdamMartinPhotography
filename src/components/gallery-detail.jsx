@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import Helmet from "react-helmet";
+
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import galleryService from "../services/galleryService";
 import ShadowImage from "./common/shadow-image";
 import Icon from "./common/icon";
 import TitleBar from "./common/title-bar";
+import Head from "./common/head";
 
 class GalleryDetail extends Component {
   state = {
@@ -23,15 +24,13 @@ class GalleryDetail extends Component {
     return (
       image && (
         <div className="row">
-          <Helmet>
-            <title>{image.name}</title>
-          </Helmet>
+          <Head title={image.name} />
           <TitleBar title={image.name}>
             <Breadcrumb.Item href={`/${image.category.toLowerCase()}`}>{image.category}</Breadcrumb.Item>
             <Breadcrumb.Item active>Details</Breadcrumb.Item>
           </TitleBar>
           <div className="container text-center">
-            <ShadowImage src={galleryService.getImageUrl(image.imageUrl, 1000, 667)} alt={image.name} />
+            <ShadowImage src={image.imageUrl} alt={image.name} />
             <div className="row py-3">
               <div className="col-md-12 col-lg-4 mb-2">
                 <strong>Location:</strong>

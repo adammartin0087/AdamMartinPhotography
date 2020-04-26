@@ -1,15 +1,13 @@
 import React from "react";
-import Helmet from "react-helmet";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import TitleBar from "../../components/common/title-bar";
+import Head from "../../components/common/head";
 
 const Contact = () => {
   return (
     <React.Fragment>
       <div className="row">
-        <Helmet>
-          <title>Contact</title>
-        </Helmet>
+        <Head title="Contact" />
         <TitleBar title="Contact">
           <Breadcrumb.Item active>Contact</Breadcrumb.Item>
         </TitleBar>

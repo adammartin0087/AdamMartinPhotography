@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Helmet from "react-helmet";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Award from "../../components/award";
 import awardService from "../../services/awardService";
 import TitleBar from "../../components/common/title-bar";
+import Head from "../../components/common/head";
 
 class Awards extends Component {
   state = {
@@ -18,9 +18,7 @@ class Awards extends Component {
   render() {
     return (
       <div className="row">
-        <Helmet>
-          <title>Awards</title>
-        </Helmet>
+        <Head title="Awards" />
         <TitleBar title="Awards">
           <Breadcrumb.Item active>Awards</Breadcrumb.Item>
         </TitleBar>

@@ -1,8 +1,22 @@
 import React from "react";
+import { Image, Transformation } from "cloudinary-react";
 
-const ShadowImage = ({ src, alt }) => {
-  return <img className="img-fluid shadow p-3 bg-white rounded" src={src} alt={alt} />;
-  // return <img className="img-fluid shadow p-3 mb-3 bg-white rounded" src={src} alt={alt} />;
+const ShadowImage = ({ src, alt, width, aspectRatio }) => {
+  return (
+    <Image
+      cloudName="dtgitfbtp"
+      responsive
+      responsiveUseBreakpoints="true"
+      className="img-fluid shadow p-3 bg-white rounded"
+      publicId={src}
+      alt={alt}
+      width={width}
+    >
+      <Transformation aspectRatio={aspectRatio || "3:2"} crop="fill" />
+      <Transformation width="auto" dpr="auto" crop="scale" />
+      <Transformation quality="auto" fetchFormat="auto" gravity="custom" />
+    </Image>
+  );
 };
 
 export default ShadowImage;

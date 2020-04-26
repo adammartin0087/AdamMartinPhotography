@@ -1,12 +1,10 @@
 import React from "react";
-import Helmet from "react-helmet";
+import Head from "../../components/common/head";
 
 const NotFound = () => {
   return (
     <React.Fragment>
-      <Helmet>
-        <title>Page Not Found</title>
-      </Helmet>
+      <Head title="Page Not Found" />
       <div className="alert alert-danger w-100">Page not found.</div>
     </React.Fragment>
   );
