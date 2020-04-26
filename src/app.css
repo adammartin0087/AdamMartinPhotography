@@ -161,9 +161,9 @@ a {
 
 .explore-detail {
   height: 90vh;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: space-between; */
+  justify-content: space-between;
 }
 .explore-detail .monumentDetails {
   padding: 20px 32px;
