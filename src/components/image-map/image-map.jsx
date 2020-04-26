@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl";
-import { isMobile } from "react-device-detect";
 import MapPopup from "./map-popup";
 
 const Map = ReactMapboxGl({
@@ -43,7 +42,7 @@ class ImageMap extends Component {
         onMove={BoundsChanged}
         maxBounds={maxBounds}
       >
-        {!isMobile && hoveredImage.length && <MapPopup image={hoveredImage[0]} />}
+        {hoveredImage.length && <MapPopup image={hoveredImage[0]} />}
 
         {images.length && (
           <Layer type="symbol" id="pumas" layout={{ "icon-image": "experience" }}>

@@ -32,7 +32,7 @@ class GalleryDetail extends Component {
           </TitleBar>
           <div className="container text-center">
             <ShadowImage src={galleryService.getImageUrl(image.imageUrl, 1000, 667)} alt={image.name} />
-            <div className="row pb-3">
+            <div className="row py-3">
               <div className="col-md-12 col-lg-4 mb-2">
                 <strong>Location:</strong>
                 <Icon icon="map-marker" className="ml-3" /> {image.location}

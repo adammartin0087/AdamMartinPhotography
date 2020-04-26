@@ -39,7 +39,7 @@ class Explore extends Component {
         this.setState({
           center: [image.longitude, image.latitude],
           zoom: [11],
-          hoveredItem: code,
+          hoveredItem: "",
           selectedImage: image,
           pitch: [45.0],
           bearing: [60.0],
