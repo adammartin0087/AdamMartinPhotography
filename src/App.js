@@ -1,13 +1,23 @@
 import React, { Component } from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
+import Loadable from "react-loadable";
+
 import Layout from "./hoc/layout/layout";
-import Home from "./containers/home/home";
-import About from "./containers/about/about";
-import Contact from "./containers/contact/contact";
-import Awards from "./containers/awards/awards";
-import Explore from "./containers/explore/explore";
-import Gallery from "./containers/gallery/gallery";
-import NotFound from "./containers/not-found/not-found";
+// import Home from "./containers/home/home";
+// import About from "./containers/about/about";
+// import Contact from "./containers/contact/contact";
+// import Awards from "./containers/awards/awards";
+// import Explore from "./containers/explore/explore";
+// import Gallery from "./containers/gallery/gallery";
+// import NotFound from "./containers/not-found/not-found";
+
+const Home = Loadable({ loader: () => import("./containers/home/home"), loading: () => <div /> });
+const About = Loadable({ loader: () => import("./containers/about/about"), loading: () => <div /> });
+const Contact = Loadable({ loader: () => import("./containers/contact/contact"), loading: () => <div /> });
+const Awards = Loadable({ loader: () => import("./containers/awards/awards"), loading: () => <div /> });
+const Explore = Loadable({ loader: () => import("./containers/explore/explore"), loading: () => <div /> });
+const Gallery = Loadable({ loader: () => import("./containers/gallery/gallery"), loading: () => <div /> });
+const NotFound = Loadable({ loader: () => import("./containers/not-found/not-found"), loading: () => <div /> });
 
 class App extends Component {
   state = {};
