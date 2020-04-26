@@ -187,10 +187,7 @@ a {
   font-weight: 400;
 }
 .explore-detail .description {
-  font-size: 16px;
   font-weight: 300;
-  margin-top: 12px;
-  line-height: 26px;
   overflow: auto;
 }
 .explore-buttons {

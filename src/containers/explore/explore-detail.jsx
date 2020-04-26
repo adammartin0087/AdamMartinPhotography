@@ -36,8 +36,8 @@ class ExploreDetail extends Component {
         <React.Fragment>
           <div className="explore-detail">
             <div>
-              <div className="explore-image">
-                <div className="col-9 col-md-12">
+              <div className="explore-image mt-3">
+                <div className="col-10 col-md-12">
                   {image.imageUrl && <ShadowImage src={getImageUrl(image.imageUrl, 520, 300)} alt={image.name} />}
                 </div>
               </div>
