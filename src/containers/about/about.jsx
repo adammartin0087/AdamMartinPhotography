@@ -16,8 +16,8 @@ const About = () => {
       </TitleBar>
       <div className="container">
         <div className="row">
-          <div className="col-md-4">
-            <ShadowImage className="mb-5" src={galleryService.getImageUrl("Adam", 400, 400)} alt="Adam Martin" />
+          <div className="col-md-4 mb-4">
+            <ShadowImage src={galleryService.getImageUrl("Adam", 400, 400)} alt="Adam Martin" />
           </div>
           <div className="col-md-8">
             <h2>Adam T. Martin</h2>

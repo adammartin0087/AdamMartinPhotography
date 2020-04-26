@@ -8,7 +8,7 @@ import ExploreList from "./explore-list";
 import ExploreDetail from "./explore-detail";
 
 const defaultZoom = [0];
-const focusZoom = [12];
+const focusZoom = [11];
 const defaultPitch = [0];
 const defaultBearing = [0];
 const defaultSpeed = [0.6];
@@ -29,21 +29,15 @@ class Explore extends Component {
     hoveredAnchor: "top",
   };
 
-  async componentDidMount() {
+  componentDidMount() {
     const { location } = this.props;
 
     if (location.pathname.includes("detail")) {
       const code = location.pathname.replace("/explore/detail/", "");
-      const image = galleryService.getImage(code);
-
-      if (image) {
+      const selectedImage = galleryService.getImage(code);
+      if (selectedImage) {
         this.setState({
-          center: [image.longitude, image.latitude],
-          zoom: focusZoom,
-          hoveredItem: "",
-          selectedImage: image,
-          pitch: [45.0],
-          bearing: [60.0],
+          selectedImage,
         });
       }
     }
@@ -62,12 +56,21 @@ class Explore extends Component {
     });
   }
 
-  mapInit = async (map) => {
+  mapInit = (map) => {
     const bounds = map.getBounds();
     const boundsArr = [bounds.getSouth(), bounds.getWest(), bounds.getNorth(), bounds.getEast()];
     const images = galleryService.getAll();
+
     this.setState({ images });
     this.setImagesAndBounds(boundsArr);
+
+    if (this.state.selectedImage)
+      this.setState({
+        center: [this.state.selectedImage.longitude, this.state.selectedImage.latitude],
+        zoom: focusZoom,
+        pitch: [45.0],
+        bearing: [60.0],
+      });
   };
 
   setImagesAndBounds = (bounds) => {
@@ -151,7 +154,7 @@ class Explore extends Component {
         </Helmet>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-8 p-0">
+            <div className="col-sm-6 col-md-8 p-0">
               <ImageMap
                 // eslint-disable-next-line
                 style="mapbox://styles/martintech/cjnsxub0l3ce32rl8dytbhmpu"
@@ -170,7 +173,7 @@ class Explore extends Component {
               />
             </div>
 
-            <div className="col-md-4 p-0 float-left">
+            <div className="col-sm-6 col-md-4 p-0 float-left">
               <Route
                 exact
                 path={this.props.match.url}

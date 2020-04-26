@@ -6,8 +6,8 @@ import Icon from "./common/icon";
 
 const Award = ({ award }) => {
   return (
-    <div className="row mb-5">
-      <div className="col-sm-12 col-md-6 col-lg-4">
+    <div className="row">
+      <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
         <div className="text-center">
           <a href={`${award.url}`} target="_blank" rel="noopener noreferrer" title={`${award.position} - ${award.name}`}>
             <ShadowImage src={galleryService.getImageUrl(award.imageUrl, 350, null)} alt={award.title} title={award.title} />
@@ -15,7 +15,7 @@ const Award = ({ award }) => {
         </div>
       </div>
 
-      <div className="col-sm-12 col-md-6 col-lg-8">
+      <div className="col-sm-12 col-md-6 col-lg-8 mb-4">
         <h2>
           <a href={`${award.url}`} target="_blank" rel="noopener noreferrer">
             {award.name}
