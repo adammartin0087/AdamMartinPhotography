@@ -8,6 +8,7 @@ import ExploreList from "./explore-list";
 import ExploreDetail from "./explore-detail";
 
 const defaultZoom = [0];
+const focusZoom = [12];
 const defaultPitch = [0];
 const defaultBearing = [0];
 const defaultSpeed = [0.6];
@@ -38,7 +39,7 @@ class Explore extends Component {
       if (image) {
         this.setState({
           center: [image.longitude, image.latitude],
-          zoom: [11],
+          zoom: focusZoom,
           hoveredItem: "",
           selectedImage: image,
           pitch: [45.0],
@@ -108,7 +109,7 @@ class Explore extends Component {
 
     this.setState({
       center: [newImage.longitude, newImage.latitude],
-      zoom: [11],
+      zoom: focusZoom,
       hoveredItem: "",
       selectedImage: newImage,
       pitch: [this.randomInt(20, 45)],
@@ -124,7 +125,8 @@ class Explore extends Component {
     const selectedImage = this.state.images.filter((image) => image.code === id)[0];
     this.setState({
       center: [selectedImage.longitude, selectedImage.latitude],
-      zoom: [11],
+      zoom: focusZoom,
+      hoveredItem: "",
       selectedImage: selectedImage,
       pitch: [this.randomInt(40, 60)],
       bearing: [this.randomInt(0, 60)],
