@@ -157,14 +157,11 @@ a {
   padding-right: 10px;
 }
 
-/* DETAIL */
-
-/* .explore-detail {
-  height: 90vh;
+.detail-column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-} */
+}
 
 .explore-image {
   display: flex;
@@ -222,13 +219,11 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+  .explore-image {
+    margin-top: 1rem !important;
+  }
+
   .mapboxgl-map {
     height: 30vh;
   }
-}
-
-.tester {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }

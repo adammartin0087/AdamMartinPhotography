@@ -173,7 +173,7 @@ class Explore extends Component {
               />
             </div>
 
-            <div className="col-sm-6 col-md-4 p-0 float-left tester">
+            <div className="col-sm-6 col-md-4 p-0 float-left detail-column">
               <Route
                 exact
                 path={this.props.match.url}
