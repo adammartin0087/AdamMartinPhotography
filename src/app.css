@@ -227,3 +227,21 @@ a {
     height: 30vh;
   }
 }
+
+.map-caption {
+  background-color: white;
+  padding: 8px 12px;
+}
+
+.map-caption h2 {
+  font-size: 15px;
+}
+
+.map-caption span {
+  line-height: 16px;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #808492;
+}
