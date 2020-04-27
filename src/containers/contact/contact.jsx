@@ -3,11 +3,11 @@ import Breadcrumb from "react-bootstrap/Breadcrumb";
 import TitleBar from "../../components/common/title-bar";
 import Head from "../../components/common/head";
 
-const Contact = () => {
+const Contact = ({ location }) => {
   return (
     <React.Fragment>
       <div className="row">
-        <Head title="Contact" />
+        <Head title="Contact" image="american-crocodile" location={location} />
         <TitleBar title="Contact">
           <Breadcrumb.Item active>Contact</Breadcrumb.Item>
         </TitleBar>

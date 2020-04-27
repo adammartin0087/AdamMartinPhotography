@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import { throttle } from "lodash";
 import galleryService from "../../services/galleryService";
-import ImageMap from "./../../components/image-map/image-map";
 import Head from "../../components/common/head";
+import ImageMap from "./../../components/image-map/image-map";
 import ExploreList from "./explore-list";
 import ExploreDetail from "./explore-detail";
 
@@ -149,7 +149,7 @@ class Explore extends Component {
     const listImages = filteredImages.map((k) => images[k]);
     return (
       <div className="row">
-        <Head title="Explore" image="Darwins-Arch-Galapagos" />
+        {!selectedImage && <Head title="Explore" image="Darwins-Arch-Galapagos" location={this.props.location} />}
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-6 col-md-8 p-0">

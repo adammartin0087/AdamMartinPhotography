@@ -4,10 +4,10 @@ import ShadowImage from "../../components/common/shadow-image";
 import TitleBar from "../../components/common/title-bar";
 import Head from "../../components/common/head";
 
-const About = () => {
+const About = ({ location }) => {
   return (
     <div className="row">
-      <Head title="About" image="Adam" />
+      <Head title="About" image="Adam" location={location} />
       <TitleBar title="About">
         <Breadcrumb.Item active>About</Breadcrumb.Item>
       </TitleBar>

@@ -24,7 +24,7 @@ class GalleryDetail extends Component {
     return (
       image && (
         <div className="row">
-          <Head title={image.name} />
+          <Head title={image.name} image={image.imageUrl} location={this.props.location} />
           <TitleBar title={image.name}>
             <Breadcrumb.Item href={`/${image.category.toLowerCase()}`}>{image.category}</Breadcrumb.Item>
             <Breadcrumb.Item active>Details</Breadcrumb.Item>

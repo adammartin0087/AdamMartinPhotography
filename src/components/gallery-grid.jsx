@@ -31,7 +31,7 @@ class GalleryGrid extends Component {
   render() {
     return (
       <div className="row">
-        <Head title={this.state.category} image={this.state.images.length > 0 ? this.state.images[0].code : null} />
+        <Head title={this.state.category} image={this.state.images.length > 0 ? this.state.images[0].code : null} location={this.props.location} />
         <TitleBar title={this.state.category}>
           <Breadcrumb.Item active>{this.state.category}</Breadcrumb.Item>
         </TitleBar>

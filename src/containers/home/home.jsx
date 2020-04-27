@@ -5,10 +5,10 @@ import ShadowImage from "../../components/common/shadow-image";
 import Banner from "./../../components/common/banner";
 import Head from "../../components/common/head";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <React.Fragment>
-      <Head description="Underwater and aerial imagery from around the world." image="optimized/crocodile-sunset" />
+      <Head description="Underwater and aerial imagery from around the world." image="optimized/crocodile-sunset" location={props.location} />
       <div className="row">
         <h1 className="d-none">Adam Martin Photography</h1>
         <Carousel>

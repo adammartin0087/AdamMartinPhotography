@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Head from "../../components/common/head";
 import ShadowImage from "../../components/common/shadow-image";
 import Icon from "../../components/common/icon";
 
@@ -33,6 +34,8 @@ class ExploreDetail extends Component {
     return (
       image && (
         <React.Fragment>
+          <Head title={image.name} image={image.imageUrl} location={this.props.location} />
+
           <div className="explore-detail">
             <div>
               <div className="explore-image">
