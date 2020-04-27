@@ -33,6 +33,7 @@ class Explore extends Component {
     const { location } = this.props;
 
     if (location.pathname.includes("detail")) {
+      console.log("UPDATE");
       const code = location.pathname.replace("/explore/detail/", "");
       const selectedImage = galleryService.getImage(code);
       if (selectedImage) {
@@ -112,9 +113,9 @@ class Explore extends Component {
 
     this.setState({
       center: [newImage.longitude, newImage.latitude],
-      zoom: focusZoom,
       hoveredItem: "",
       selectedImage: newImage,
+      zoom: [this.state.zoom[0] === focusZoom[0] ? focusZoom[0] + 0.1 : focusZoom[0]],
       pitch: [this.randomInt(20, 45)],
       bearing: [this.randomInt(-40, 40)],
     });
