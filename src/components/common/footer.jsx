@@ -15,6 +15,7 @@ const Footer = () => {
               responsiveUseBreakpoints="true"
               publicId={"AMP"}
               alt="Adam Martin Photography"
+              title="Adam Martin Photography"
               width="80"
             >
               <Transformation quality="auto" fetchFormat="auto" gravity="custom" dpr="auto" />

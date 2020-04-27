@@ -10,6 +10,7 @@ const ShadowImage = ({ src, alt, width, aspectRatio, innerWidth }) => {
       className="img-fluid shadow p-3 bg-white rounded"
       publicId={src}
       alt={alt}
+      title={alt}
       width={width}
     >
       <Transformation aspectRatio={aspectRatio || "3:2"} crop="fill" />

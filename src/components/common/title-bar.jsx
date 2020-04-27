@@ -12,7 +12,9 @@ const TitleBar = ({ title, children, bottomMargin }) => {
             </div>
             <div className="col-xs-12 col-md-6">
               <Breadcrumb>
-                <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                <Breadcrumb.Item href="/" title="Home">
+                  Home
+                </Breadcrumb.Item>
                 {children}
               </Breadcrumb>
             </div>

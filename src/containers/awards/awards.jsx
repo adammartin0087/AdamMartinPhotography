@@ -18,7 +18,7 @@ class Awards extends Component {
   render() {
     return (
       <div className="row">
-        <Head title="Awards" />
+        <Head title="Awards" image="sunset-silkies" />
         <TitleBar title="Awards">
           <Breadcrumb.Item active>Awards</Breadcrumb.Item>
         </TitleBar>

@@ -149,7 +149,7 @@ class Explore extends Component {
     const listImages = filteredImages.map((k) => images[k]);
     return (
       <div className="row">
-        <Head title="Explore" />
+        <Head title="Explore" image="Darwins-Arch-Galapagos" />
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-6 col-md-8 p-0">
@@ -176,7 +176,13 @@ class Explore extends Component {
                 exact
                 path={this.props.match.url}
                 render={(props) => (
-                  <ExploreList onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave} images={listImages} onSelectItem={this.onClick} />
+                  <ExploreList
+                    onMouseEnter={this.onMouseEnter}
+                    onMouseLeave={this.onMouseLeave}
+                    images={listImages}
+                    loaded={images.length > 0}
+                    onSelectItem={this.onClick}
+                  />
                 )}
               />
               <Route

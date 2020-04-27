@@ -7,7 +7,7 @@ import Head from "../../components/common/head";
 const About = () => {
   return (
     <div className="row">
-      <Head title="About" />
+      <Head title="About" image="Adam" />
       <TitleBar title="About">
         <Breadcrumb.Item active>About</Breadcrumb.Item>
       </TitleBar>

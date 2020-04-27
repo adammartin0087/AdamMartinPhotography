@@ -8,7 +8,7 @@ import Head from "../../components/common/head";
 const Home = () => {
   return (
     <React.Fragment>
-      <Head description="Underwater and aerial imagery from around the world." />
+      <Head description="Underwater and aerial imagery from around the world." image="optimized/crocodile-sunset" />
       <div className="row">
         <h1 className="d-none">Adam Martin Photography</h1>
         <Carousel>
