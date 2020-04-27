@@ -6,7 +6,7 @@ const TitleBar = ({ title, children, bottomMargin }) => {
     title && (
       <div className={`container-fluid titleBar py-3 mb-${margin} text-light`}>
         <div className="container">
-          <div class="row">
+          <div className="row">
             <div className="col-xs-12 col-md-6">
               <h1>{title}</h1>
             </div>

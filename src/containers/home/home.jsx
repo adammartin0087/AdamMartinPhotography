@@ -6,8 +6,6 @@ import Banner from "./../../components/common/banner";
 import Head from "../../components/common/head";
 
 const Home = () => {
-  const w = 600;
-  const h = 432;
   return (
     <React.Fragment>
       <Head description="Underwater and aerial imagery from around the world." />

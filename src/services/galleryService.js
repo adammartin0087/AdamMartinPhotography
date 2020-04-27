@@ -3,8 +3,6 @@ import images from "./data/images.json";
 export function getImageUrl(code, w, h) {
   const width = w > 0 ? ",w_" + w : "";
   const height = h > 0 ? ",h_" + h : "";
-  const dpr = window.devicePixelRatio;
-  console.log(dpr);
   return `https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill${width}${height}/${code}`;
 }
 

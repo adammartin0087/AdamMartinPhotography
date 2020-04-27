@@ -1,7 +1,7 @@
 import React from "react";
 import { Image, Transformation } from "cloudinary-react";
 
-const ShadowImage = ({ src, alt, width, aspectRatio }) => {
+const ShadowImage = ({ src, alt, width, aspectRatio, innerWidth }) => {
   return (
     <Image
       cloudName="dtgitfbtp"
@@ -13,7 +13,7 @@ const ShadowImage = ({ src, alt, width, aspectRatio }) => {
       width={width}
     >
       <Transformation aspectRatio={aspectRatio || "3:2"} crop="fill" />
-      <Transformation width="auto" dpr="auto" crop="scale" />
+      <Transformation width={innerWidth || "auto"} dpr="auto" crop="scale" />
       <Transformation quality="auto" fetchFormat="auto" gravity="custom" />
     </Image>
   );

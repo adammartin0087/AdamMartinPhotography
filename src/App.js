@@ -3,13 +3,6 @@ import { Route, Switch, withRouter } from "react-router-dom";
 import Loadable from "react-loadable";
 
 import Layout from "./hoc/layout/layout";
-// import Home from "./containers/home/home";
-// import About from "./containers/about/about";
-// import Contact from "./containers/contact/contact";
-// import Awards from "./containers/awards/awards";
-// import Explore from "./containers/explore/explore";
-// import Gallery from "./containers/gallery/gallery";
-// import NotFound from "./containers/not-found/not-found";
 
 const Home = Loadable({ loader: () => import("./containers/home/home"), loading: () => <div /> });
 const About = Loadable({ loader: () => import("./containers/about/about"), loading: () => <div /> });
