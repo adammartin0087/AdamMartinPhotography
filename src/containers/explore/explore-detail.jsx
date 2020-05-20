@@ -9,7 +9,7 @@ class ExploreDetail extends Component {
   };
 
   onGoBack = () => {
-    this.props.history.push("/explore");
+    this.props.history.push(this.props.backUrl);
   };
 
   onCycleImage = (code, dir) => {

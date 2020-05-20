@@ -1,5 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from "react-snapshot";
+// import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -21,7 +22,7 @@ import "./app.css";
 
 library.add(faInstagram, faFacebook, faMapMarker, faTrophy, faAngleRight, faEnvelope, faCamera, faCalendar, faArrowLeft, faArrowRight, faWindowClose);
 
-ReactDOM.render(
+render(
   <React.StrictMode>
     <BrowserRouter>
       <App />

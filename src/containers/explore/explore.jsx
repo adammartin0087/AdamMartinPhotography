@@ -188,7 +188,7 @@ class Explore extends Component {
               />
               <Route
                 path={`${this.props.match.url}/detail/:id`}
-                render={(props) => <ExploreDetail onCycleItem={this.onCycle} image={selectedImage} {...props} />}
+                render={(props) => <ExploreDetail onCycleItem={this.onCycle} image={selectedImage} backUrl="/explore" {...props} />}
               />
             </div>
           </div>

@@ -1,7 +1,7 @@
 [
   {
     "category": "Astrophotography",
-    "name": "Maroon Bells",
+    "name": "Maroon Bells at Night",
     "code": "Maroon-Bells-Night",
     "imageUrl": "Maroon-Bells-Night",
     "location": "Aspen, Colorado",
@@ -27,7 +27,7 @@
   },
   {
     "category": "Aerial",
-    "name": "Seven Mile Bridge",
+    "name": "Seven-Mile Bridge",
     "code": "Seven-Mile-Bridge",
     "imageUrl": "Florida-Keys",
     "location": "Florida Keys",
@@ -40,13 +40,13 @@
   },
   {
     "category": "Underwater",
-    "name": "Vandenburg",
+    "name": "Vandenburg Wreck",
     "code": "vandenburg-key-west",
     "imageUrl": "optimized/vandenburg-min",
     "location": "Key West, Florida",
     "date": "1/24/2016",
     "camera": "Canon EOS 5D Mk III",
-    "tags": ["Florida"],
+    "tags": ["Florida", "Key West"],
     "order": 0,
     "latitude": 24.497151,
     "longitude": -81.820179
@@ -109,8 +109,8 @@
 
   {
     "category": "Underwater",
-    "name": "Humpbacks",
-    "code": "Humpbacks",
+    "name": "Mother, Calf and Escort",
+    "code": "humpbacks-mother-calf-escort",
     "imageUrl": "Optimized/Humpbacks",
     "location": "Moorea, French Polynesia",
     "date": "1/1/2018",
@@ -141,46 +141,46 @@
     "location": "Apataki, French Polynesia",
     "date": "5/17/2016",
     "camera": "Canon EOS 5D Mk III",
-    "tags": ["French Polynesia"],
+    "tags": ["Apataki", "French Polynesia"],
     "order": 45,
     "latitude": -15.315483,
     "longitude": -146.408259
   },
   {
     "category": "Underwater",
-    "name": "Oceanic White Tip Sharks",
-    "code": "oceanic-white-tips",
+    "name": "Oceanic Whitetip Sharks",
+    "code": "oceanic-whitetips",
     "imageUrl": "optimized/oceanic-white-tips-min",
     "location": "Apataki, French Polynesia",
     "date": "11/17/2019",
     "camera": "Canon EOS 5D Mk III",
-    "tags": ["French Polynesia"],
+    "tags": ["Apataki", "French Polynesia"],
     "order": 45,
     "latitude": -15.586642,
     "longitude": -146.458696
   },
   {
     "category": "Aerial",
-    "name": "Bora Bora 1",
-    "code": "bora-bora-1",
+    "name": "Mount Otemanu",
+    "code": "mount-otemanu-bora-bora",
     "imageUrl": "optimized/bora-bora-1-min",
     "location": "Bora Bora, French Polynesia",
     "date": "9/11/2018",
     "camera": "DJI Mavic Pro",
-    "tags": ["French Polynesia"],
+    "tags": ["Bora Bora", "French Polynesia"],
     "order": 45,
     "latitude": -16.505991,
     "longitude": -151.698883
   },
   {
     "category": "Aerial",
-    "name": "Bora Bora 2",
-    "code": "bora-bora-2",
+    "name": "Bora Bora Shallows",
+    "code": "bora-bora-shallows",
     "imageUrl": "optimized/bora-bora-2-min",
     "location": "Bora Bora, French Polynesia",
     "date": "9/11/2018",
     "camera": "DJI Mavic Pro",
-    "tags": ["French Polynesia"],
+    "tags": ["Bora Bora", "French Polynesia"],
     "order": 45,
     "latitude": -16.54165,
     "longitude": -151.73152
@@ -188,25 +188,25 @@
   {
     "category": "Underwater",
     "name": "Christmas Tree Worms",
-    "code": "toau-1",
+    "code": "toau-christmas-tree-worms",
     "imageUrl": "optimized/toau1-min",
     "location": "Toau, French Polynesia",
     "date": "11/11/2019",
     "camera": "Canon EOS 5D Mk III",
-    "tags": ["French Polynesia"],
+    "tags": ["Toau", "French Polynesia"],
     "order": 45,
     "latitude": -15.917792,
     "longitude": -145.903452
   },
   {
     "category": "Underwater",
-    "name": "Black Tip Shark",
-    "code": "toau-2",
+    "name": "Blacktip Shark",
+    "code": "toau-blacktip-shark",
     "imageUrl": "optimized/toau-2-min",
     "location": "Toau, French Polynesia",
     "date": "11/11/2019",
     "camera": "Canon EOS 5D Mk III",
-    "tags": ["French Polynesia"],
+    "tags": ["Toau", "French Polynesia"],
     "order": 45,
     "latitude": -15.917077,
     "longitude": -145.88901
@@ -245,7 +245,7 @@
     "location": "Jardines de la Reina, Cuba",
     "date": "7/6/2017",
     "camera": "Canon EOS 5D Mk III",
-    "tags": ["Crocodiles", "Cuba"],
+    "tags": ["Cuba", "Crocodile", "Reptiles"],
     "order": 100,
     "latitude": 20.8416771,
     "longitude": -78.9375894
@@ -305,7 +305,7 @@
   },
   {
     "category": "Underwater",
-    "name": "Galapagos Reef",
+    "name": "Galápagos Reef",
     "code": "Galapagos-Reef",
     "imageUrl": "Optimized/Galapagos-Reef",
     "location": "Galápagos, Ecuador",
@@ -331,7 +331,7 @@
   },
   {
     "category": "Underwater",
-    "name": "Galapagos Penguins",
+    "name": "Galápagos Penguins",
     "code": "galapagos-penguins",
     "imageUrl": "Optimized/galapagos-penguins-min",
     "location": "Galápagos, Ecuador",
@@ -372,7 +372,7 @@
 
   {
     "category": "Aerial",
-    "name": "Colorado",
+    "name": "Colorado Winter",
     "code": "Colorado-Snow-Aerial",
     "imageUrl": "Colorado-Snow-Aerial",
     "location": "Aspen, Colorado",
@@ -386,7 +386,7 @@
   {
     "category": "Underwater",
     "name": "Cuba Reef",
-    "code": "Cuba-Reef",
+    "code": "cuba-reef",
     "imageUrl": "Cuba-Reef",
     "location": "Jardines de la Reina, Cuba",
     "date": "1/1/2018",
@@ -399,7 +399,7 @@
   {
     "category": "Underwater",
     "name": "Cuernos",
-    "code": "Cuernos-Splitshot",
+    "code": "cuernos-splitshot",
     "imageUrl": "Cuernos-Splishot",
     "location": "Torres del Paine, Patagonia, Chile",
     "date": "7/10/2016",
@@ -412,8 +412,8 @@
 
   {
     "category": "Aerial",
-    "name": "Darwin\u0027s Arch",
-    "code": "Darwins-Arch-Galapagos",
+    "name": "Darwin\u0027s Arch Sunset",
+    "code": "darwins-arch-galapagos",
     "imageUrl": "Darwins-Arch-Galapagos",
     "location": "Galápagos, Ecuador",
     "date": "1/24/2017",
@@ -438,8 +438,8 @@
   },
   {
     "category": "Underwater",
-    "name": "Dream Gate Cenote",
-    "code": "dream-gate",
+    "name": "Dreamgate Cenote",
+    "code": "dreamgate-cenote",
     "imageUrl": "optimized/dream-gate-min",
     "location": "Tulum, Mexico",
     "date": "4/1/2018",
@@ -452,7 +452,7 @@
   {
     "category": "Aerial",
     "name": "Dynjandi",
-    "code": "Dynjandi-Iceland",
+    "code": "dynjandi-iceland",
     "imageUrl": "Dynjandi-Iceland",
     "location": "Iceland",
     "date": "1/28/2017",
@@ -465,7 +465,7 @@
   {
     "category": "Landscape",
     "name": "Gjáin",
-    "code": "Gjáin-Iceland",
+    "code": "gjáin-iceland",
     "imageUrl": "Gjáin-Iceland",
     "location": "Iceland",
     "date": "1/24/2017",
@@ -479,7 +479,7 @@
   {
     "category": "Aerial",
     "name": "Vatnajokull Glacier",
-    "code": "Glacier-Iceland",
+    "code": "vatnajokull-iceland",
     "imageUrl": "Glacier-Iceland",
     "location": "Iceland",
     "date": "1/27/2017",
@@ -549,33 +549,33 @@
     "location": "Haiti",
     "date": "1/31/2017",
     "camera": "DJI Phantom 3 Pro",
-    "tags": [],
+    "tags": ["Haiti"],
     "order": 100,
     "latitude": 18.8744941,
     "longitude": -72.713696
   },
   {
     "category": "Underwater",
-    "name": "Humback Inversion",
-    "code": "Humback-Inversion",
+    "name": "Humpback Inversion",
+    "code": "humpback-inversion",
     "imageUrl": "Humpback-Inversion",
     "location": "Moorea, French Polynesia",
     "date": "1/1/2018",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Moorea", "French Polynesia"],
     "order": 100,
     "latitude": -17.5681909,
     "longitude": -149.913051
   },
   {
     "category": "Underwater",
-    "name": "Humback Whales",
-    "code": "Humback-Whales",
+    "name": "Humpback Dance",
+    "code": "humpback-dance",
     "imageUrl": "Humpback-Whales",
     "location": "Moorea, French Polynesia",
     "date": "1/1/2018",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Moorea", "French Polynesia"],
     "order": 100,
     "latitude": -17.4518659,
     "longitude": -149.785044
@@ -653,7 +653,7 @@
     "location": "Mammoth Lakes, California",
     "date": "1/26/2017",
     "camera": "DJI Phantom 3 Pro",
-    "tags": ["California"],
+    "tags": ["California", "Mammoth"],
     "order": 100,
     "latitude": 37.5955759,
     "longitude": -119.0182911
@@ -666,7 +666,7 @@
     "location": "Aspen, Colorado",
     "date": "1/24/2017",
     "camera": "Canon EOS 5D Mk III",
-    "tags": ["Colorado"],
+    "tags": ["Colorado", "Aspen"],
     "order": 100,
     "latitude": 39.0981336,
     "longitude": -106.9447112
@@ -679,7 +679,7 @@
     "location": "Aspen, Colorado",
     "date": "1/24/2017",
     "camera": "Canon EOS 5D Mk III",
-    "tags": ["Colorado"],
+    "tags": ["Colorado", "Aspen"],
     "order": 100,
     "latitude": 39.0981336,
     "longitude": -106.9447112
@@ -699,8 +699,8 @@
   },
   {
     "category": "Underwater",
-    "name": "Moorea",
-    "code": "Moorea",
+    "name": "Moorea Deepwater Perspective",
+    "code": "moorea-deepwater",
     "imageUrl": "Moorea",
     "location": "Moorea, French Polynesia",
     "date": "1/1/2018",
@@ -718,7 +718,7 @@
     "location": "Ushuaia, Patagonia, Argentina",
     "date": "1/1/2018",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Ushuaia", "Tierra del Fuego", "Patagonia", "Argentina"],
     "order": 100,
     "latitude": -54.8671241,
     "longitude": -68.2524701
@@ -731,7 +731,7 @@
     "location": "Ushuaia, Patagonia, Argentina",
     "date": "1/1/2018",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Ushuaia", "Tierra del Fuego", "Patagonia", "Argentina"],
     "order": 100,
     "latitude": -54.853825,
     "longitude": -68.57729
@@ -744,7 +744,7 @@
     "location": "Ushuaia, Patagonia, Argentina",
     "date": "1/1/2018",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Ushuaia", "Tierra del Fuego", "Patagonia", "Argentina"],
     "order": 100,
     "latitude": -54.844116,
     "longitude": -68.570655
@@ -757,7 +757,7 @@
     "location": "Ushuaia, Patagonia, Argentina",
     "date": "1/1/2018",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Ushuaia", "Tierra del Fuego", "Patagonia", "Argentina"],
     "order": 100,
     "latitude": -54.847619,
     "longitude": -68.484867
@@ -770,7 +770,7 @@
     "location": "Ushuaia, Patagonia, Argentina",
     "date": "1/1/2018",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Ushuaia", "Tierra del Fuego", "Patagonia", "Argentina"],
     "order": 100,
     "latitude": -54.846843,
     "longitude": -68.484174
@@ -1355,33 +1355,33 @@
     "location": "Fakarava, French Polynesia",
     "date": "11/1/2019",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Fakarava", "French Polynesia"],
     "order": 100,
     "latitude": -16.2719069,
     "longitude": -145.5559561
   },
   {
     "category": "Underwater",
-    "name": "Napoleon",
-    "code": "napoleon",
+    "name": "Napoleon Wrasse",
+    "code": "napoleon-wrasse-fakarava",
     "imageUrl": "Optimized/napoleon-min",
     "location": "Fakarava, French Polynesia",
     "date": "11/1/2019",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Fakarava", "French Polynesia"],
     "order": 100,
     "latitude": -16.515308,
     "longitude": -145.462774
   },
   {
     "category": "Underwater",
-    "name": "Fakarava Reef",
-    "code": "Fakarava-Reef",
+    "name": "Tetamanu Village",
+    "code": "tetamanu-village-fakarava",
     "imageUrl": "Optimized/Fakarava-Reef",
     "location": "Fakarava, French Polynesia",
     "date": "11/1/2019",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Fakarava", "French Polynesia"],
     "order": 100,
     "latitude": -16.5138577,
     "longitude": -145.4643735
@@ -1394,7 +1394,7 @@
     "location": "Fakarava, French Polynesia",
     "date": "11/1/2019",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Fakarava", "French Polynesia"],
     "order": 100,
     "latitude": -16.17712,
     "longitude": -145.574809
@@ -1407,7 +1407,7 @@
     "location": "Kaukura, French Polynesia",
     "date": "11/1/2019",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Kaukura", "French Polynesia", "Whale Shark"],
     "order": 100,
     "latitude": -15.617971,
     "longitude": -146.840152
@@ -1420,7 +1420,7 @@
     "location": "Baja, Mexico",
     "date": "11/1/2019",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Cabo Pulmo", "Mexico"],
     "order": 100,
     "latitude": 23.4352486,
     "longitude": -109.4265872
@@ -1433,7 +1433,7 @@
     "location": "Baja, Mexico",
     "date": "11/1/2019",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Cabo Pulmo", "Mexico"],
     "order": 100,
     "latitude": 23.442669,
     "longitude": -109.417112
@@ -1446,7 +1446,7 @@
     "location": "Red Sea, Egypt",
     "date": "1/1/2018",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Red Sea", "Egypt", "Whale Shark"],
     "order": 100,
     "latitude": 25.0151945,
     "longitude": 35.5723548
@@ -1459,7 +1459,7 @@
     "location": "New Zealand",
     "date": "1/24/2017",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["New Zealand"],
     "order": 100,
     "latitude": -40.5016557,
     "longitude": 172.6768832
@@ -1472,7 +1472,7 @@
     "location": "Galápagos, Ecuador",
     "date": "1/24/2017",
     "camera": "Canon EOS 5D Mk III",
-    "tags": [],
+    "tags": ["Galápagos", "Sharks"],
     "order": 100,
     "latitude": 1.379177,
     "longitude": -91.8114
@@ -1485,7 +1485,7 @@
     "location": "Galápagos, Ecuador",
     "date": "1/24/2017",
     "camera": "DJI Phantom 3 Pro",
-    "tags": [],
+    "tags": ["Galápagos"],
     "order": 100,
     "latitude": 1.405267,
     "longitude": -91.825432
@@ -1498,7 +1498,7 @@
     "location": "Galápagos, Ecuador",
     "date": "1/24/2017",
     "camera": "DJI Phantom 3 Pro",
-    "tags": [],
+    "tags": ["Galápagos"],
     "order": 100,
     "latitude": 1.369924,
     "longitude": -91.828387
