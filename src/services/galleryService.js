@@ -1,23 +1,15 @@
-import images from "./data/images.json";
+import http from "./httpService";
+
+export async function getAllImages() {
+  const { data } = await http.get("/GetImages");
+  data.Items.sort((a, b) => (a.Longitude > b.Longitude ? 1 : -1));
+  return data.Items;
+}
 
 export function getImageUrl(code, w, h) {
   const width = w > 0 ? ",w_" + w : "";
   const height = h > 0 ? ",h_" + h : "";
   return `https://res.cloudinary.com/dtgitfbtp/image/upload/q_auto,f_auto,g_custom,c_fill${width}${height}/${code}`;
-}
-
-export function getAll() {
-  return images.sort((a, b) => (a.longitude > b.longitude ? 1 : -1));
-}
-
-export function getImages(category) {
-  return images.filter((image) => image.category.toLowerCase() === category.toLowerCase());
-}
-
-export function getImage(code) {
-  return images.find(function (image) {
-    return image.code.toLowerCase() === code.toLowerCase();
-  });
 }
 
 export function getCategory(category) {
@@ -38,9 +30,7 @@ export function getCategory(category) {
 }
 
 export default {
-  getAll,
-  getImages,
-  getImage,
+  getAllImages,
   getCategory,
-  getImageUrl,
+  getImageUrl
 };

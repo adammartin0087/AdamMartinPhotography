@@ -48,11 +48,11 @@ class ImageMap extends Component {
           <Layer type="symbol" id="pumas" layout={{ "icon-image": "experience" }}>
             {images.map((image) => (
               <Feature
-                onMouseEnter={this.markerHover.bind(null, image.code)}
-                onMouseLeave={this.markerEndHover.bind(null, image.code)}
-                onClick={this.markerClick.bind(null, image.code)}
-                coordinates={[image.longitude, image.latitude]}
-                key={image.code}
+                onMouseEnter={this.markerHover.bind(null, image.Code)}
+                onMouseLeave={this.markerEndHover.bind(null, image.Code)}
+                onClick={this.markerClick.bind(null, image.Code)}
+                coordinates={[image.Longitude, image.Latitude]}
+                key={image.Code}
               />
             ))}
           </Layer>

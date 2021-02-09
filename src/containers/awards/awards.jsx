@@ -10,8 +10,8 @@ class Awards extends Component {
     awards: [],
   };
 
-  componentDidMount() {
-    const awards = awardService.getAwards();
+  async componentDidMount() {
+    const awards = await awardService.getAwards();
     this.setState({ awards });
   }
 
@@ -25,7 +25,7 @@ class Awards extends Component {
 
         <div className="container">
           {this.state.awards.map((award) => (
-            <Award key={award.name} award={award} />
+            <Award key={award.Name} award={award} />
           ))}
         </div>
       </div>

@@ -6,12 +6,12 @@ const offset = [0, -15];
 
 const MapPopup = ({ image }) => (
   <div>
-    <Popup coordinates={[image.longitude, image.latitude]} anchor="bottom" offset={offset}>
+    <Popup coordinates={[image.Longitude, image.Latitude]} anchor="bottom" offset={offset}>
       <div className="text-center">
-        <ShadowImage src={image.imageUrl} alt={image.name} width="240" />
+        <ShadowImage src={image.ImageUrl} alt={image.Name} width="240" />
         <div className="map-caption">
-          <h2>{image.name}</h2>
-          <span>{image.location}</span>
+          <h2>{image.Name}</h2>
+          <span>{image.Location}</span>
         </div>
       </div>
     </Popup>

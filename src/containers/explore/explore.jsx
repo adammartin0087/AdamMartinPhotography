@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import { throttle } from "lodash";
-import galleryService from "../../services/galleryService";
 import Head from "../../components/common/head";
 import ImageMap from "./../../components/image-map/image-map";
 import ExploreList from "./explore-list";
@@ -30,18 +29,6 @@ class Explore extends Component {
   };
 
   componentDidMount() {
-    const { location } = this.props;
-
-    if (location.pathname.includes("detail")) {
-      console.log("UPDATE");
-      const code = location.pathname.replace("/explore/detail/", "");
-      const selectedImage = galleryService.getImage(code);
-      if (selectedImage) {
-        this.setState({
-          selectedImage,
-        });
-      }
-    }
 
     this.props.history.listen((ev) => {
       if (!ev.pathname.includes("detail")) {
@@ -57,17 +44,28 @@ class Explore extends Component {
     });
   }
 
-  mapInit = (map) => {
+  mapInit = async (map) => {
     const bounds = map.getBounds();
     const boundsArr = [bounds.getSouth(), bounds.getWest(), bounds.getNorth(), bounds.getEast()];
-    const images = galleryService.getAll();
-
+    const { location, images } = this.props;
+    
     this.setState({ images });
+
+    if (location.pathname.includes("detail")) {
+      const code = location.pathname.replace("/explore/detail/", "");
+      const selectedImage = images.filter(img => img.Code.toLowerCase() === code.toLowerCase())[0];
+      if (selectedImage) {
+        this.setState({
+          selectedImage
+        });
+      }
+    }
+    
     this.setImagesAndBounds(boundsArr);
 
     if (this.state.selectedImage)
       this.setState({
-        center: [this.state.selectedImage.longitude, this.state.selectedImage.latitude],
+        center: [this.state.selectedImage.Longitude, this.state.selectedImage.Latitude],
         zoom: focusZoom,
         pitch: [45.0],
         bearing: [60.0],
@@ -77,8 +75,8 @@ class Explore extends Component {
   setImagesAndBounds = (bounds) => {
     const { images } = this.state;
     const filteredImages = Object.keys(images).filter((k) => {
-      const lat = images[k].latitude;
-      const long = images[k].longitude;
+      const lat = images[k].Latitude;
+      const long = images[k].Longitude;
       return lat > bounds[0] && long > bounds[1] && lat < bounds[2] && long < bounds[3];
     });
 
@@ -107,12 +105,14 @@ class Explore extends Component {
   };
 
   onCycle = (image, direction) => {
-    const currentIndex = this.state.images.findIndex((x) => x.code === image);
-    const nextIndex = (currentIndex + direction) % this.state.images.length;
+    const currentIndex = this.state.images.findIndex((x) => x.Code === image);
+    const offset = currentIndex + direction;
+    const len = this.state.images.length;
+    const nextIndex = (offset % len + len) % len;
     const newImage = this.state.images[nextIndex];
 
     this.setState({
-      center: [newImage.longitude, newImage.latitude],
+      center: [newImage.Longitude, newImage.Latitude],
       hoveredItem: "",
       selectedImage: newImage,
       zoom: [this.state.zoom[0] === focusZoom[0] ? focusZoom[0] + 0.1 : focusZoom[0]],
@@ -121,14 +121,14 @@ class Explore extends Component {
     });
 
     setTimeout(() => {
-      this.props.history.replace(`/explore/detail/${newImage.code}`);
+      this.props.history.replace(`/explore/detail/${newImage.Code}`);
     }, 500);
   };
 
   onClick = (id) => {
-    const selectedImage = this.state.images.filter((image) => image.code === id)[0];
+    const selectedImage = this.state.images.filter((image) => image.Code === id)[0];
     this.setState({
-      center: [selectedImage.longitude, selectedImage.latitude],
+      center: [selectedImage.Longitude, selectedImage.Latitude],
       zoom: focusZoom,
       hoveredItem: "",
       selectedImage: selectedImage,
@@ -137,7 +137,7 @@ class Explore extends Component {
     });
 
     setTimeout(() => {
-      this.props.history.replace(`/explore/detail/${selectedImage.code}`);
+      this.props.history.replace(`/explore/detail/${selectedImage.Code}`);
     }, 500);
   };
 

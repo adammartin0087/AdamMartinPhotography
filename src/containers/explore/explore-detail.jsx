@@ -34,27 +34,27 @@ class ExploreDetail extends Component {
     return (
       image && (
         <React.Fragment>
-          <Head title={image.name} image={image.imageUrl} location={this.props.location} />
+          <Head title={image.Name} image={image.ImageUrl} location={this.props.location} />
 
           <div className="explore-detail">
             <div>
               <div className="explore-image">
-                <div className="col-10 col-md-12">{image.imageUrl && <ShadowImage src={image.imageUrl} alt={image.name} />}</div>
+                <div className="col-10 col-md-12">{image.ImageUrl && <ShadowImage src={image.ImageUrl} alt={image.Name} />}</div>
               </div>
               <div className="monumentDetails">
-                <h1 className="title">{image.name}</h1>
+                <h1 className="title">{image.Name}</h1>
                 <div className="description">
-                  <Icon icon="map-marker" style={{ width: 14 }} className="mr-2" /> {image.location}
+                  <Icon icon="map-marker" style={{ width: 14 }} className="mr-2" /> {image.Location}
                 </div>
               </div>
             </div>
           </div>
           <div className="explore-buttons">
-            <div className="navbutton" onClick={() => this.onCycleImage(image.code, -1)}>
+            <div className="navbutton" onClick={() => this.onCycleImage(image.Code, -1)}>
               <Icon icon="arrow-left" className="mr-2" />
               Previous
             </div>
-            <div className="navbutton" onClick={() => this.onCycleImage(image.code, 1)}>
+            <div className="navbutton" onClick={() => this.onCycleImage(image.Code, 1)}>
               Next
               <Icon icon="arrow-right" className="ml-2" />
             </div>

@@ -14,9 +14,9 @@ class ExploreList extends Component {
             images.map((image) => (
               <ExploreListItem
                 image={image}
-                key={image.code}
-                onClick={() => onSelectItem(image.code)}
-                onMouseEnter={() => onMouseEnter(image.code)}
+                key={image.Code}
+                onClick={() => onSelectItem(image.Code)}
+                onMouseEnter={() => onMouseEnter(image.Code)}
                 onMouseLeave={() => onMouseLeave()}
               />
             ))}

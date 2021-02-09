@@ -1,7 +1,9 @@
-import awards from "./data/awards.json";
+import http from "./httpService";
 
-export function getAwards() {
-  return awards;
+export async function getAwards() {
+  const { data } = await http.get("/GetAwards");
+  const { Items } = data;
+  return Items;
 }
 
 export default {

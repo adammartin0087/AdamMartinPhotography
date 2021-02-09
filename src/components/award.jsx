@@ -8,33 +8,33 @@ const Award = ({ award }) => {
     <div className="row">
       <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
         <div className="text-center">
-          <a href={`${award.url}`} target="_blank" rel="noopener noreferrer" title={`${award.position} - ${award.name}`}>
-            <ShadowImage src={award.imageUrl} alt={award.title} title={award.title} />
+          <a href={`${award.Url}`} target="_blank" rel="noopener noreferrer" title={`${award.Position} - ${award.Name}`}>
+            <ShadowImage src={award.ImageUrl} alt={award.Title} title={award.Title} />
           </a>
         </div>
       </div>
 
       <div className="col-sm-12 col-md-6 col-lg-8 mb-4">
         <h2>
-          <a href={`${award.url}`} target="_blank" rel="noopener noreferrer">
-            {award.name}
+          <a href={`${award.Url}`} target="_blank" rel="noopener noreferrer">
+            {award.Name}
           </a>
         </h2>
         <div className="row text-uppercase small">
           <div className="col-xs-6 col-md-12 col-lg-4">
             <Icon icon="trophy" style={{ width: 14 }} className="mr-2" />
-            {award.position}
+            {award.Position}
           </div>
 
           <div className="col-xs-6 col-md-12 col-lg-4">
             <Icon icon="map-marker" style={{ width: 14 }} className="mr-2" />
-            {award.location}
+            {award.Location}
           </div>
         </div>
 
         <p className="mt-2">
           <strong>The Story: </strong>
-          {Parser(award.story)}
+          {Parser(award.Story)}
         </p>
       </div>
     </div>
